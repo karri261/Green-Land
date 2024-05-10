@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesDown, faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons'
+import { faAnglesDown, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import logo from './assets/image/logo.png'
@@ -133,22 +133,26 @@ function HomePage(props: Props) {
          {/* Hero Section */}
          <div className="hero-section">
             <div className="layer layer-01">
-               <div className="text-container text-01" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-                  <div>VARIETY</div>
-                  <div>IS THE</div>
-                  <div>SPICE</div>
-                  <div>OF THE</div>
-                  <div>LIFE!</div>
-               </div>
+               <Container>
+                  <div className="text-container text-01" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                     <div>VARIETY</div>
+                     <div>IS THE</div>
+                     <div>SPICE</div>
+                     <div>OF THE</div>
+                     <div>LIFE!</div>
+                  </div>
+               </Container>
             </div>
             <div className="layer layer-02">
-               <div className="text-container">
-                  <div>KEEP </div>
-                  <div>VARIETY</div>
-                  <div>AND</div>
-                  <div>PREVENT</div>
-                  <div>ANXIETY!</div>
-               </div>
+               <Container>
+                  <div className="text-container">
+                     <div>KEEP </div>
+                     <div>VARIETY</div>
+                     <div>AND</div>
+                     <div>PREVENT</div>
+                     <div>ANXIETY!</div>
+                  </div>
+               </Container>
             </div>
             <div className="scroll-button">
                <button>
@@ -366,34 +370,34 @@ function HomePage(props: Props) {
          <div id="section-6">
             <img src={footer_head} alt="" />
             <div className="footer_main">
-            <Container>
-               <div className="inner-main">
-                  <Row>
-                     <Col lg={3}>
-                        <h2>GREEN LAND</h2>
-                        <p>Help Green Land come together to protect what’s ours. Together we can stop poaching and save the animals from extinction. Place the animals in safe hands.</p>
-                        <div className="contact-list">
-                        <FontAwesomeIcon className='icon' icon={faFacebookF} />
-                        <FontAwesomeIcon className='icon' icon={faInstagram} />
-                        <FontAwesomeIcon className='icon' icon={faTwitter} />
-                        <FontAwesomeIcon className='icon' icon={faLinkedin} />
-                        </div>
-                     </Col>
-                     <Col lg={3}>
-                        <ul>
-                           <li><b>ABOUT US</b></li>
-                           <li><b>Current Situation</b></li>
-                           <li><b>Wildlife's List</b></li>
-                           <li><b>Contact</b></li>
-                        </ul>
-                     </Col>
-                     <Col lg={3}></Col>
-                  </Row>
-               </div>
-            </Container>
+               <Container>
+                  <div className="inner-main">
+                     <Row>
+                        <Col lg={3}>
+                           <h2>GREEN LAND</h2>
+                           <p>Help Green Land come together to protect what’s ours. Together we can stop poaching and save the animals from extinction. Place the animals in safe hands.</p>
+                           <div className="contact-list">
+                              <FontAwesomeIcon className='icon' icon={faFacebookF} />
+                              <FontAwesomeIcon className='icon' icon={faInstagram} />
+                              <FontAwesomeIcon className='icon' icon={faTwitter} />
+                              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                           </div>
+                        </Col>
+                        <Col lg={3}>
+                           <ul>
+                              <li><b>ABOUT US</b></li>
+                              <li><b>Current Situation</b></li>
+                              <li><b>Wildlife's List</b></li>
+                              <li><b>Contact</b></li>
+                           </ul>
+                        </Col>
+                        <Col lg={3}></Col>
+                     </Row>
+                  </div>
+               </Container>
+            </div>
          </div>
-         </div>
-         
+
          {/* End section 6 */}
       </>
    );
