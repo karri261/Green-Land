@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './homepage.css'
+import './Homepage.css'
 
 import { Container, Row, Col } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'
