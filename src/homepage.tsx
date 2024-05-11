@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './Homepage.css'
+import './homepage.css'
 
 import { Container, Row, Col } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'
@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesDown, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import logo from './assets/image/logo.png'
@@ -133,33 +133,22 @@ function HomePage(props: Props) {
          {/* Hero Section */}
          <div className="hero-section">
             <div className="layer layer-01">
-               <Container>
-                  <div className="text-container text-01" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-                     <div>VARIETY</div>
-                     <div>IS THE</div>
-                     <div>SPICE</div>
-                     <div>OF THE</div>
-                     <div>LIFE!</div>
-                  </div>
-               </Container>
+               <div className="text-container text-01" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                  <div>VARIETY</div>
+                  <div>IS THE</div>
+                  <div>SPICE</div>
+                  <div>OF THE</div>
+                  <div>LIFE!</div>
+               </div>
             </div>
             <div className="layer layer-02">
-               <Container>
-                  <div className="text-container">
-                     <div>KEEP </div>
-                     <div>VARIETY</div>
-                     <div>AND</div>
-                     <div>PREVENT</div>
-                     <div>ANXIETY!</div>
-                  </div>
-               </Container>
-            </div>
-            <div className="scroll-button">
-               <button>
-                  <a href="#section-1">
-                     <FontAwesomeIcon className='icon' icon={faAnglesDown} />
-                  </a>
-               </button>
+               <div className="text-container">
+                  <div>KEEP </div>
+                  <div>VARIETY</div>
+                  <div>AND</div>
+                  <div>PREVENT</div>
+                  <div>ANXIETY!</div>
+               </div>
             </div>
          </div>
          {/*End Hero Section */}

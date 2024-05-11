@@ -138,27 +138,6 @@ ul {
     transition-timing-function: ease;
 }
 
-.scroll-button a {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 10px;
-    font-size: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-decoration: none;
-    color: #000;
-}
-
-.scroll-button a .icon {
-    opacity: 0.2;
-    transition: opacity 0.4s;
-}
-
-.scroll-button a:hover .icon {
-    opacity: 0.7;
-}
-
 /* End hero */
 /* Section-1 */
 #section-1 {
@@ -381,13 +360,14 @@ ul {
 /* End section 5 */
 /* Section 6 */
 #section-6 img {
+    margin-top: 50px;
     width: 100%;
 }
 #section-6 .footer_main {
-    padding: 60px 0;
     background-color: #222222;
 }
 #section-6 .footer_main .inner-main {
+    padding: 30px;
     color: #fff;
     text-align: justify;
 }
