@@ -375,6 +375,23 @@ ul {
     font-size: 20px;
     padding: 10px;
 }
+#section-6 .footer_main .inner-main .row .col-lg-3 ul {
+    padding-left: 30px;
+}
+#section-6 .footer_main ul .head {
+    font-size: 25px;
+}
+#section-6 .footer_main ul .email-input {
+    width: 100%;
+    margin-top: 10px;
+}
+#section-6 .footer_main ul .email-input input {
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+#section-6 .footer_main .copyright-box {
+    text-align: center;
+}
 /* End section 6 */
 /* Responsive */
 @media screen and (max-width: 992px) {
@@ -386,4 +403,20 @@ ul {
         text-align: center;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-12 {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .col-sm-12 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .col-sm-12 {
+        text-align: center;
+    }
 }

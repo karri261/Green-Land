@@ -362,7 +362,7 @@ function HomePage(props: Props) {
                <Container>
                   <div className="inner-main">
                      <Row>
-                        <Col lg={3}>
+                        <Col lg={4} sm={12}>
                            <h2>GREEN LAND</h2>
                            <p>Help Green Land come together to protect what’s ours. Together we can stop poaching and save the animals from extinction. Place the animals in safe hands.</p>
                            <div className="contact-list">
@@ -372,16 +372,40 @@ function HomePage(props: Props) {
                               <FontAwesomeIcon className='icon' icon={faLinkedin} />
                            </div>
                         </Col>
-                        <Col lg={3}>
+                        <Col lg={2} xs={6}>
                            <ul>
-                              <li><b>ABOUT US</b></li>
-                              <li><b>Current Situation</b></li>
-                              <li><b>Wildlife's List</b></li>
-                              <li><b>Contact</b></li>
+                              <li className='head'><b>Navigation</b></li>
+                              <li>About us</li>
+                              <li>Current Situation</li>
+                              <li>Wildlife's List</li>
+                              <li>Contact</li>
                            </ul>
                         </Col>
-                        <Col lg={3}></Col>
+                        <Col lg={3} xs={6}>
+                        <ul>
+                              <li className='head'><b>Contact</b></li>
+                              <li>Phone: 0236 3667 111</li>
+                              <li>Email: greenland@vku.udn.vn</li>
+                              <li>Address: <br />
+                              123, ABC Street, Da Nang</li>
+                           </ul>
+                        </Col>
+                        <Col lg={3} sm={12}>
+                           <ul>
+                              <li className='head'><b>Mailbox</b></li>
+                              <li>Please enter your Email to receive our latest notifications!</li>
+                              <li className='email-input'>
+                                 <input type="email" name="" id="" placeholder='Your email'/>
+                              </li>
+                           </ul>
+                        </Col>
                      </Row>
+                     <hr />
+                     <div className="copyright-box">
+                        <div className="content">
+                           Copyright &copy; Green Land since 2014
+                        </div>
+                     </div>
                   </div>
                </Container>
             </div>
