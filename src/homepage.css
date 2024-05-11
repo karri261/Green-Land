@@ -404,6 +404,7 @@ ul {
     }
 
 }
+<<<<<<< HEAD:src/Homepage.css
 
 @media screen and (max-width: 768px) {
     .col-sm-12 {
@@ -420,3 +421,5 @@ ul {
         text-align: center;
     }
 }
+=======
+>>>>>>> 44b8bfd2775b486c846e2708ac9818100558fcce:src/homepage.css
