@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { NavLink } from 'react-router-dom';
 import './homepage.css'
 
 import { Container, Row, Col } from 'react-bootstrap'
@@ -9,7 +10,6 @@ import Offcanvas from 'react-bootstrap/Offcanvas'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
 import logo from './assets/image/logo.png'
 import section_2_img from './assets/image/section_2_img.png'
 import our_vision from './assets/image/our_vision.png'
@@ -65,7 +65,7 @@ function HomePage(props: Props) {
          window.removeEventListener('scroll', handleScroll);
       };
    }, []);
-
+   // React Slick
    var settings = {
       dots: true,
       infinite: false,
@@ -118,11 +118,13 @@ function HomePage(props: Props) {
                      </Offcanvas.Header>
                      <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1">
-                           <Nav.Link href="#action1">Home</Nav.Link>
-                           <Nav.Link href="#action2">About us</Nav.Link>
+                           <Nav.Link href="#home" className='active'>Home</Nav.Link>
+                           <Nav.Link as={NavLink} to="/about-us" >About us</Nav.Link>
                            <Nav.Link href="#action3">Current Situation</Nav.Link>
-                           <Nav.Link href="#action4">Wildlife's List</Nav.Link>
-                           <Nav.Link href="#action5">Contact</Nav.Link>
+                           <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
+                           <Nav.Link href="#action5">
+                              <button className='button button-left'>Donate</button>
+                           </Nav.Link>
                         </Nav>
                      </Offcanvas.Body>
                   </Navbar.Offcanvas>
@@ -355,7 +357,7 @@ function HomePage(props: Props) {
             </Container>
          </div>
          {/* End section 5 */}
-         {/* Section 6 */}
+         {/* Footer */}
          <div id="section-6">
             <img src={footer_head} alt="" />
             <div className="footer_main">
@@ -382,12 +384,12 @@ function HomePage(props: Props) {
                            </ul>
                         </Col>
                         <Col lg={3} xs={6}>
-                        <ul>
+                           <ul>
                               <li className='head'><b>Contact</b></li>
                               <li>Phone: 0236 3667 111</li>
                               <li>Email: greenland@vku.udn.vn</li>
                               <li>Address: <br />
-                              123, ABC Street, Da Nang</li>
+                              470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang</li>
                            </ul>
                         </Col>
                         <Col lg={3} sm={12}>
@@ -395,7 +397,7 @@ function HomePage(props: Props) {
                               <li className='head'><b>Mailbox</b></li>
                               <li>Please enter your Email to receive our latest notifications!</li>
                               <li className='email-input'>
-                                 <input type="email" name="" id="" placeholder='Your email'/>
+                                 <input type="email" name="" id="" placeholder='Your email' />
                               </li>
                            </ul>
                         </Col>
@@ -410,10 +412,10 @@ function HomePage(props: Props) {
                </Container>
             </div>
          </div>
-
-         {/* End section 6 */}
+         {/* Footer */}
       </>
    );
 }
 
 export default HomePage;
+
