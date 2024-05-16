@@ -421,9 +421,7 @@ ul {
     #section-2 .inner-wrap .right-box {
         text-align: center;
     }
-
 }
-
 @media screen and (max-width: 768px) {
     .col-sm-12 {
         text-align: center;

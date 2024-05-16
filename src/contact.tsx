@@ -90,18 +90,20 @@ function Contact(props: Props) {
                                     <h5 className="mb-3 fs-4" style={{ color: "#1a564b" }}>
                                         Contact Information
                                     </h5>
-                                    <p className="d-flex mb-2">
-                                        <FontAwesomeIcon icon={faLocationDot} />
-                                        <span>470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang</span>
-                                    </p>
-                                    <p className="d-flex mb-2">
-                                        <FontAwesomeIcon icon={faPhone} />
-                                        <span><a href="#">098-765-4321</a></span>
-                                    </p>
-                                    <p className="d-flex">
-                                        <FontAwesomeIcon icon={faEnvelope} />
-                                        <span><a href="#">greenland@vku.udn.vn</a></span>
-                                    </p>
+                                    <div className="list d-flex">
+                                        <p className="d-flex mb-2">
+                                            <FontAwesomeIcon icon={faLocationDot} />
+                                            <span>470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang</span>
+                                        </p>
+                                        <p className="d-flex mb-2">
+                                            <FontAwesomeIcon icon={faPhone} />
+                                            <span><a href="#">098-765-4321</a></span>
+                                        </p>
+                                        <p className="d-flex">
+                                            <FontAwesomeIcon icon={faEnvelope} />
+                                            <span><a href="#">greenland@vku.udn.vn</a></span>
+                                        </p>
+                                    </div>
                                     <button className='button button-left'>
                                         <a href="https://maps.app.goo.gl/WxnATGwT3C8yXEzq6" target='_blank'>Get Direction</a>
                                     </button>

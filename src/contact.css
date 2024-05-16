@@ -9,6 +9,7 @@
 
 body {
     font-family: "Be Vietnam Pro" !important;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -119,7 +120,9 @@ body {
     height: 65px;
     object-fit: cover;
 }
-
+.contact-info .list {
+    flex-direction: column;
+}
 .contact-info p {
     display: flex;
     align-items: center;
@@ -222,3 +225,16 @@ body {
     text-align: center;
 }
 /* End footer */
+/* Responsive */
+@media screen and (max-width: 992px) {
+    .contact-section .contact-main {
+        text-align: center;
+    }
+    .contact-section .contact-main .contact-image {
+        justify-content: center;
+    }
+    .contact-section .contact-main .contact-image p {
+        text-align: left;
+    }
+}
+/* End responsive */
