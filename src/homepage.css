@@ -123,10 +123,10 @@ ul {
 }
 
 .layer-01 {
-    background-image: url("assets/image/hero-01.jpg");
+    background-image: url("assets/image/hero-01_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
 }
 
 .text-container {
@@ -137,9 +137,9 @@ ul {
     font-family: "Be Vietnam Pro", sans-serif;
     color: #fff;
     text-shadow: 4px 4px 8px rgba(2, 0, 0, 2);
-    font-size: 100px;
+    font-size: 95px;
     font-weight: 700;
-    line-height: 90px;
+    line-height: 100px;
     cursor: default;
 }
 
@@ -147,7 +147,7 @@ ul {
     background-image: url("assets/image/hero-02.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 
     mask: url(/src/assets/image/test-mask.svg);
     mask-repeat: no-repeat;
@@ -162,6 +162,7 @@ ul {
 /* Section-1 */
 #section-1 {
     padding: 40px;
+    background-color: #fff;
 }
 
 #section-1 .video {
@@ -252,6 +253,7 @@ ul {
 /* Section 4 */
 #section-4 {
     padding: 80px 0;
+    background-color: #fff;
 }
 #section-4 h2 {
     text-align: center;
@@ -334,6 +336,7 @@ ul {
 /* Section 5 */
 #section-5 {
     padding-bottom: 40px;
+    background-color: #fff;
 }
 #section-5 .inner-main {
     padding: 40px;
@@ -379,6 +382,9 @@ ul {
 }
 /* End section 5 */
 /* Section 6 */
+#section-6 .footer-head {
+    background-color: #fff;
+}
 #section-6 img {
     margin-top: 50px;
     width: 100%;

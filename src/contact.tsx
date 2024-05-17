@@ -71,7 +71,7 @@ function Contact(props: Props) {
             ))}
             {/* End Header*/}
             {/* Main */}
-            <div className="contact-section p-5">
+            <div className="contact-section">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 col-12 ms-auto mb-5 ">
@@ -166,7 +166,9 @@ function Contact(props: Props) {
             {/* End main */}
             {/* Footer */}
             <div id="footer">
-                <img src={footer_head} alt="" />
+                <div className='footer-head'>
+                 <img src={footer_head} alt="" />
+                </div>
                 <div className="footer_main">
                     <Container>
                         <div className="inner-main">

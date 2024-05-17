@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
 import './donate.css'
 
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Offcanvas from 'react-bootstrap/Offcanvas'
@@ -10,11 +11,9 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Alert from 'react-bootstrap/Alert'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import logo from './assets/image/logo.png'
+import HomePage from './homepage';
 
-import footer_head from './assets/image/footer_head.jpg'
 
 interface Props { }
 
@@ -28,6 +27,7 @@ function Donate(props: Props) {
   const navigate = useNavigate();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
 
   // Effect for header
   useEffect(() => {

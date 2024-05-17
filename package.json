@@ -14,6 +14,7 @@
     "@types/node": "^16.18.96",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
+    "@types/styled-components": "^5.1.34",
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.5",
     "lenis": "^1.0.45",
@@ -25,6 +26,7 @@
     "react-scroll-trigger": "^0.6.14",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.11",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },

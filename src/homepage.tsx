@@ -32,7 +32,7 @@ function HomePage(props: Props) {
    const { } = props
 
    const [isScrolledPast, setIsScrolledPast] = useState(false);
-   
+
    // Effect for hero section
    useEffect(() => {
       function onMouseMove(e: any) {
@@ -361,7 +361,9 @@ function HomePage(props: Props) {
          {/* End section 5 */}
          {/* Footer */}
          <div id="section-6">
-            <img src={footer_head} alt="" />
+            <div className="footer-head">
+               <img src={footer_head} alt="" />
+            </div>
             <div className="footer_main">
                <Container>
                   <div className="inner-main">

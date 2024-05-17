@@ -94,7 +94,7 @@ body {
 /* End button CSS */
 /* Main */
 .contact-section {
-    margin-top: 80px;
+    padding-top: 100px;
     background-color: #fff;
 }
 
@@ -191,6 +191,9 @@ body {
 }
 /* End main */
 /* Section 6 */
+#footer .footer-head {
+    background-color: #fff;
+}
 #footer img {
     margin-top: 50px;
     width: 100%;
