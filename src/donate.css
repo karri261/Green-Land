@@ -1,13 +1,13 @@
 :root {
-  --color-01: #315740;
+  --color-01: #021008;
   --color-02: #232323;
 }
 
-body {
+/* body {
   background-image: url(assets/image/body_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 /* Donate Section */
 #donate {
