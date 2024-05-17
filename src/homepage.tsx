@@ -30,7 +30,9 @@ interface Props { }
 
 function HomePage(props: Props) {
    const { } = props
+
    const [isScrolledPast, setIsScrolledPast] = useState(false);
+   
    // Effect for hero section
    useEffect(() => {
       function onMouseMove(e: any) {
@@ -122,7 +124,7 @@ function HomePage(props: Props) {
                            <Nav.Link as={NavLink} to="/about-us" >About us</Nav.Link>
                            <Nav.Link href="#action3">Current Situation</Nav.Link>
                            <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
-                           <Nav.Link href="#action5">
+                           <Nav.Link as={NavLink} to="/donate">
                               <button className='button button-left'>Donate</button>
                            </Nav.Link>
                         </Nav>
@@ -387,9 +389,9 @@ function HomePage(props: Props) {
                            <ul>
                               <li className='head'><b>Contact</b></li>
                               <li>Phone: 0236 3667 111</li>
-                              <li>Email: greenland@vku.udn.vn</li>
+                              <li>Email: greenland@gmail.com</li>
                               <li>Address: <br />
-                              470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang</li>
+                                 470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang</li>
                            </ul>
                         </Col>
                         <Col lg={3} sm={12}>

@@ -39,7 +39,7 @@ ul {
 /* End button CSS */
 /* Header */
 .fixed-top {
-    transition: background-color 0.6s ease, box-shadow 0.3s ease;
+    transition: background-color 0.1s ease, box-shadow 0.3s ease;
 }
 
 .scrolled-past {
@@ -94,7 +94,8 @@ ul {
     left: calc(50% - 35px);
 }
 
-.navbar-nav .nav-link:last-child:hover::before {
+.navbar-nav .nav-link:last-child:hover::before,
+.navbar-nav .nav-link:last-child.active::before {
     display: none;
 }
 

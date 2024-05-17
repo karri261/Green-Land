@@ -59,8 +59,8 @@ function Contact(props: Props) {
                                     <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
                                     <Nav.Link as={NavLink} to="/about-us" >About us</Nav.Link>
                                     <Nav.Link href="#action3">Current Situation</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/contact" className='active'>Contact</Nav.Link>
-                                    <Nav.Link href="#action5">
+                                    <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/donate">
                                         <button className='button button-left'>Donate</button>
                                     </Nav.Link>
                                 </Nav>
@@ -101,7 +101,7 @@ function Contact(props: Props) {
                                         </p>
                                         <p className="d-flex">
                                             <FontAwesomeIcon icon={faEnvelope} />
-                                            <span><a href="#">greenland@vku.udn.vn</a></span>
+                                            <span><a href="#">greenland@gmail.com</a></span>
                                         </p>
                                     </div>
                                     <button className='button button-left'>
@@ -115,7 +115,7 @@ function Contact(props: Props) {
                                 <h2 style={{ color: "#fff" }}>Contact Form</h2>
                                 <p className="mb-4" style={{ color: "#fff" }}>
                                     You can only send to an email:
-                                    <a href="#">greenland@vku.udn.vn</a>
+                                    <a href="#">greenland@gmail.com</a>
                                 </p>
                                 <div className="row">
                                     <div className="col-lg-6 col-md-6 col-12">
@@ -194,7 +194,7 @@ function Contact(props: Props) {
                                     <ul>
                                         <li className='head'><b>Contact</b></li>
                                         <li>Phone: 0236 3667 111</li>
-                                        <li>Email: greenland@vku.udn.vn</li>
+                                        <li>Email: greenland@gmail.com</li>
                                         <li>Address: <br />
                                             470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang</li>
                                     </ul>
