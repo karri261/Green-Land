@@ -166,7 +166,7 @@ function Donate(props: Props) {
                 <Nav className="justify-content-end flex-grow-1">
                   <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
                   <Nav.Link as={NavLink} to="/about-us" >About us</Nav.Link>
-                  <Nav.Link href="#action3">Reality</Nav.Link>
+                  <Nav.Link as={NavLink} to="/reality">Reality</Nav.Link>
                   <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
                   <Nav.Link as={NavLink} to="/donate">
                     <button className='button button-left'>Donate</button>

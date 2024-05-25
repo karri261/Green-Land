@@ -7,6 +7,7 @@ import HomePage from './homepage';
 import About from './about';
 import Contact from './contact'
 import Donate from './donate';
+import Reality from './reality';
 
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,6 +33,7 @@ root.render(
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/about-us" element={<About />} />
+        <Route path="/reality" element={<Reality />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
       </Routes>
