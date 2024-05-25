@@ -241,7 +241,7 @@ function HomePage(props: Props) {
                   <div>VARIETY</div>
                   <div>AND</div>
                   <div>PREVENT</div>
-                  <div>ANXIETY!</div>
+                  <div>EXTINCTION!</div>
                </div>
             </div>
          </div>

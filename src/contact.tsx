@@ -13,7 +13,6 @@ import { faFacebookF, faInstagram, faTwitter, faLinkedin } from '@fortawesome/fr
 
 import logo from './assets/image/logo.png'
 import footer_head from './assets/image/footer_head_@.png'
-import contact_img from './assets/image/contact-img.jpg'
 
 interface Props { }
 
@@ -81,7 +80,7 @@ function Contact(props: Props) {
                                 <p className='address'>
                                     <FontAwesomeIcon icon={faLocationDot} />
                                     <span>470 Tran Dai Nghia,
-                                        <br /><span>    </span> Da Nang</span>
+                                        <br /> Da Nang</span>
                                 </p>
                                 <p className='phone'>
                                     <FontAwesomeIcon icon={faPhone} />

@@ -10,7 +10,7 @@
 }
 
 body {
-    min-width: 576px;
+    min-width: 400px;
     background-image: url(assets/image/body_bg.jpg);
 }
 
@@ -1027,5 +1027,14 @@ ul {
 @media screen and (max-width: 576px) {
     .col-sm-12 {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text-container {
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 80px;
+        cursor: default;
     }
 }

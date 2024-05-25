@@ -157,7 +157,7 @@ function About(props: Props) {
                                 <h4>Dedicated to wildlife preservation and environmental education through community collaboration.</h4>
                                 <p>Our organization was established in 2014 with the primary goal of protecting wildlife and their habitats.
                                     Our mission arose from the pressing need to conserve biodiversity, which has been threatened by human activities.
-                                    Our mission is to protect wildlife and their habitats while promoting environmental awareness.
+                                    Our mission is to protect wild animals and their habitats while promoting environmental awareness.
                                 </p>
                                 <button className='button button-left'>
                                     <a href="#journey">Discover more</a>

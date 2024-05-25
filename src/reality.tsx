@@ -11,6 +11,7 @@ import logo from './assets/image/logo.png';
 import footer_head from './assets/image/footer_head.png'
 import news_vid from './assets/videos/news-vid.mp4'
 
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -185,9 +186,9 @@ function Reality(props: Props) {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1">
-                  <Nav.Link href="#home" className='active'>Home</Nav.Link>
+                  <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
                   <Nav.Link as={NavLink} to="/about-us" >About us</Nav.Link>
-                  <Nav.Link href="#action3">Reality</Nav.Link>
+                  <Nav.Link as={NavLink} to="/reality">Reality</Nav.Link>
                   <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
                   <Nav.Link as={NavLink} to="/donate">
                     <button className='button button-left'>Donate</button>
