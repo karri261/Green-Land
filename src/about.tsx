@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import './about.css';
 
 import AOS from 'aos';
@@ -160,7 +160,7 @@ function About(props: Props) {
                                     Our mission is to protect wildlife and their habitats while promoting environmental awareness.
                                 </p>
                                 <button className='button button-left'>
-                                    Discover more
+                                    <a href="#journey">Discover more</a>
                                 </button>
                             </div>
                         </Col>
@@ -296,7 +296,7 @@ function About(props: Props) {
                 <Container>
                     <h2>OUR LEADERS</h2>
                     <Row className='team-member'>
-                        <Col lg={4} sm={8} className='leader-infor'>
+                        <Col lg={4} sm={7} className='leader-infor'>
                             <div className="image" data-aos="flip-left">
                                 <img src={leader_1} alt="" />
                             </div>
@@ -343,9 +343,9 @@ function About(props: Props) {
                                     <br />In our work, Green Land focuses on saving populations of the most ecologically, economically and culturally important species in the wild. <br />
                                     Ultimately, by protecting species, we save this beautiful, vulnerable and utterly irreplaceable planet we call home.
                                 </p>
-                                <button className='button button-left'>
+                                <Link to='/contact' className='button button-left'>
                                     Join with us
-                                </button>
+                                </Link>
                             </div>
                         </Col>
                         <Col lg={1}></Col>
@@ -361,8 +361,8 @@ function About(props: Props) {
             </div>
             {/* End join */}
             {/* Footer */}
-            <footer id="footer">
-                <div className="footer-head">
+            <div id="footer">
+                <div className='footer-head'>
                     <img src={footer_head} alt="" />
                 </div>
                 <div className="footer_main">
@@ -373,10 +373,18 @@ function About(props: Props) {
                                     <h2>GREEN LAND</h2>
                                     <p>Help Green Land come together to protect what’s ours. Together we can stop poaching and save the animals from extinction. Place the animals in safe hands.</p>
                                     <div className="contact-list">
-                                        <FontAwesomeIcon className='icon' icon={faFacebookF} />
-                                        <FontAwesomeIcon className='icon' icon={faInstagram} />
-                                        <FontAwesomeIcon className='icon' icon={faTwitter} />
-                                        <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                                        <a href="https://www.facebook.com/" target='_blank'>
+                                            <FontAwesomeIcon className='icon' icon={faFacebookF} />
+                                        </a>
+                                        <a href="https://www.instagram.com/" target='blank'>
+                                            <FontAwesomeIcon className='icon' icon={faInstagram} />
+                                        </a>
+                                        <a href="https://x.com/?lang=vi" target='blank'>
+                                            <FontAwesomeIcon className='icon' icon={faTwitter} />
+                                        </a>
+                                        <a href="https://www.linkedin.com/" target='blank'>
+                                            <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                                        </a>
                                     </div>
                                 </Col>
                                 <Col lg={2} xs={6}>
@@ -402,7 +410,10 @@ function About(props: Props) {
                                         <li className='head'><b>Mailbox</b></li>
                                         <li>Please enter your Email to receive our latest notifications!</li>
                                         <li className='email-input'>
-                                            <input type="email" name="" id="" placeholder='Your email' />
+                                            <form action="">
+                                                <input type="email" name="" id="" placeholder='Your email' />
+                                                <button>Send</button>
+                                            </form>
                                         </li>
                                     </ul>
                                 </Col>
@@ -416,7 +427,7 @@ function About(props: Props) {
                         </div>
                     </Container>
                 </div>
-            </footer>
+            </div>
             {/* Footer */}
         </>
     );

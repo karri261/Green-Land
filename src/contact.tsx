@@ -80,7 +80,7 @@ function Contact(props: Props) {
                             <div className="contact-main">
                                 <p className='address'>
                                     <FontAwesomeIcon icon={faLocationDot} />
-                                    <span>470 Tran Dai Nghia, 
+                                    <span>470 Tran Dai Nghia,
                                         <br /><span>    </span> Da Nang</span>
                                 </p>
                                 <p className='phone'>
@@ -152,10 +152,18 @@ function Contact(props: Props) {
                                     <h2>GREEN LAND</h2>
                                     <p>Help Green Land come together to protect what’s ours. Together we can stop poaching and save the animals from extinction. Place the animals in safe hands.</p>
                                     <div className="contact-list">
-                                        <FontAwesomeIcon className='icon' icon={faFacebookF} />
-                                        <FontAwesomeIcon className='icon' icon={faInstagram} />
-                                        <FontAwesomeIcon className='icon' icon={faTwitter} />
-                                        <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                                        <a href="https://www.facebook.com/" target='_blank'>
+                                            <FontAwesomeIcon className='icon' icon={faFacebookF} />
+                                        </a>
+                                        <a href="https://www.instagram.com/" target='blank'>
+                                            <FontAwesomeIcon className='icon' icon={faInstagram} />
+                                        </a>
+                                        <a href="https://x.com/?lang=vi" target='blank'>
+                                            <FontAwesomeIcon className='icon' icon={faTwitter} />
+                                        </a>
+                                        <a href="https://www.linkedin.com/" target='blank'>
+                                            <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                                        </a>
                                     </div>
                                 </Col>
                                 <Col lg={2} xs={6}>
@@ -181,7 +189,10 @@ function Contact(props: Props) {
                                         <li className='head'><b>Mailbox</b></li>
                                         <li>Please enter your Email to receive our latest notifications!</li>
                                         <li className='email-input'>
-                                            <input type="email" name="" id="" placeholder='Your email' />
+                                            <form action="">
+                                                <input type="email" name="" id="" placeholder='Your email' />
+                                                <button>Send</button>
+                                            </form>
                                         </li>
                                     </ul>
                                 </Col>

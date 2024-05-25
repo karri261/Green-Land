@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './homepage.css'
 
 import { Container, Row, Col, ProgressBar, Button } from 'react-bootstrap'
@@ -284,9 +284,9 @@ function HomePage(props: Props) {
                               </span>
                            </li>
                         </ul>
-                        <button className='button button-left'>
+                        <Link to="/about-us" className='button button-left'>
                            Discover more
-                        </button>
+                        </Link>
                      </div>
                   </Col>
                </Row>
@@ -324,7 +324,7 @@ function HomePage(props: Props) {
          </div>
          {/* End section impact */}
          {/* Section recentproj */}
-         <div id="recent-proj" data-aos="zoom-out">
+         <div id="recent-proj" data-aos="fade-up">
             <div className="head">
                <h2>RECENT PROJECTS</h2>
             </div>
@@ -339,9 +339,9 @@ function HomePage(props: Props) {
                            <p className="card__description">
                               Collected  $450 of  $800
                            </p>
-                           <a href="#" className='card__button button button-left'>
+                           <Link to="/donate" className='card__button button button-left'>
                               Donate now
-                           </a>
+                           </Link>
                         </div>
                      </Col>
 
@@ -353,9 +353,9 @@ function HomePage(props: Props) {
                            <p className="card__description">
                               Collected  $450 of  $800
                            </p>
-                           <a href="#" className='card__button button button-left'>
+                           <Link to="/donate" className='card__button button button-left'>
                               Donate now
-                           </a>
+                           </Link>
                         </div>
                      </Col>
 
@@ -367,9 +367,9 @@ function HomePage(props: Props) {
                            <p className="card__description">
                               Collected  $450 of  $800
                            </p>
-                           <a href="#" className='card__button button button-left'>
+                           <Link to="/donate" className='card__button button button-left'>
                               Donate now
-                           </a>
+                           </Link>
                         </div>
                      </Col>
                   </Row>
@@ -542,11 +542,6 @@ function HomePage(props: Props) {
                      </div>
                   </Slider>
                </div>
-               <div className="button">
-                  <button className='button button-left'>
-                     <a href="#">VIEW ALL</a>
-                  </button>
-               </div>
             </Container>
          </div>
          {/* End section latest new */}
@@ -614,7 +609,7 @@ function HomePage(props: Props) {
                      <p>If you cut a tree, you kill a life. If you save a tree, you save a life. If you plant a tree, you plant a life.</p>
                      <div className="button" data-aos="zoom-in">
                         <button className='button button-left'>
-                           <a href="#">SUBSCRIBE NOW</a>
+                           <Link to="/contact">SUBSCRIBE NOW</Link>
                         </button>
                      </div>
                   </div>
@@ -623,8 +618,8 @@ function HomePage(props: Props) {
          </div>
          {/* End section subscribe */}
          {/* Footer */}
-         <footer id="footer">
-            <div className="footer-head">
+         <div id="footer">
+            <div className='footer-head'>
                <img src={footer_head} alt="" />
             </div>
             <div className="footer_main">
@@ -635,10 +630,18 @@ function HomePage(props: Props) {
                            <h2>GREEN LAND</h2>
                            <p>Help Green Land come together to protect what’s ours. Together we can stop poaching and save the animals from extinction. Place the animals in safe hands.</p>
                            <div className="contact-list">
-                              <FontAwesomeIcon className='icon' icon={faFacebookF} />
-                              <FontAwesomeIcon className='icon' icon={faInstagram} />
-                              <FontAwesomeIcon className='icon' icon={faTwitter} />
-                              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                              <a href="https://www.facebook.com/" target='_blank'>
+                                 <FontAwesomeIcon className='icon' icon={faFacebookF} />
+                              </a>
+                              <a href="https://www.instagram.com/" target='blank'>
+                                 <FontAwesomeIcon className='icon' icon={faInstagram} />
+                              </a>
+                              <a href="https://x.com/?lang=vi" target='blank'>
+                                 <FontAwesomeIcon className='icon' icon={faTwitter} />
+                              </a>
+                              <a href="https://www.linkedin.com/" target='blank'>
+                                 <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                              </a>
                            </div>
                         </Col>
                         <Col lg={2} xs={6}>
@@ -664,7 +667,10 @@ function HomePage(props: Props) {
                               <li className='head'><b>Mailbox</b></li>
                               <li>Please enter your Email to receive our latest notifications!</li>
                               <li className='email-input'>
-                                 <input type="email" name="" id="" placeholder='Your email' />
+                                 <form action="">
+                                    <input type="email" name="" id="" placeholder='Your email' />
+                                    <button>Send</button>
+                                 </form>
                               </li>
                            </ul>
                         </Col>
@@ -678,7 +684,7 @@ function HomePage(props: Props) {
                   </div>
                </Container>
             </div>
-         </footer>
+         </div>
          {/* Footer */}
       </>
    );

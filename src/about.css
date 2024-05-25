@@ -201,7 +201,7 @@ ul {
 #journey .sticky {
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     overflow-x: hidden;
 }
@@ -292,7 +292,10 @@ ul {
 #journey .sample-card .title:hover a {
     color: var(--color-03);
 }
-
+#about a {
+    color: #fff;
+    text-decoration: none;
+}
 /* End journey */
 /* Team */
 #team {
@@ -501,24 +504,16 @@ ul {
     aspect-ratio: 16 / 9;
     margin-top: 20px;
 }
+#join a {
+    text-decoration: none;
+}
 /* End Join */
 @media screen and (max-width: 786px) {
     #journey .sample-card {
         width: 100vw;
     }
 }
-@media screen and (max-width: 300px) {
-    /* #journey .sample-card {
-        width: 60vw;
-    } */
-}
+
 @media screen and (max-width: 500px) {
-    /* #journey .sample-card .box-header .date-box {
-        padding: 5px 15px;
-        color: #fff;
-        font-size: 15px;
-        text-align: center;
-        font-weight: 500;
-        z-index: 99;
-    } */
+
 }

@@ -19,6 +19,8 @@ ul {
     list-style-type: none;
 }
 
+
+
 /* Button CSS */
 .button {
     position: relative;
@@ -354,7 +356,9 @@ ul {
     border-radius: 0;
     font-size: 20px;
 }
-
+#introduce a {
+    text-decoration: none !important;
+}
 /* End introduce */
 /* impact */
 #impact {
@@ -950,6 +954,14 @@ ul {
     padding: 10px;
 }
 
+#footer .footer_main .inner-main .contact-list a {
+    color: #fff;
+}
+
+#footer .footer_main .inner-main .contact-list a:hover {
+    color: var(--color-03);
+}
+
 #footer .footer_main .inner-main .row .col-lg-3 ul {
     padding-left: 30px;
 }
@@ -970,6 +982,13 @@ ul {
 
 #footer .footer_main .copyright-box {
     text-align: center;
+}
+
+#footer .footer_main button {
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 3px 10px;
+    background-color: #fff;
 }
 
 /* End section footer */
