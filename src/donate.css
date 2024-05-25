@@ -1,27 +1,21 @@
 :root {
-  --color-01: #021008;
+  --color-01: #315740;
   --color-02: #232323;
 }
 
-/* body {
-  background-image: url(assets/image/body_bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
 /* Donate Section */
 #donate {
-  margin-top: 100px;
+  margin-top: 130px;
   margin-bottom: 100px;
 }
 
 #donate .custom-form h2,
 #donate .custom-form h5 {
-  color: #fff;
+  color: var(--color-01);
 }
 
 #donate .donate-form {
-  background: #9dbe9272;
+  padding: 0 !important;
   border-radius: 20px;
   position: relative;
   overflow: hidden;
@@ -37,10 +31,18 @@
   margin-bottom: 20px;
 }
 
+.custom-form .input {
+  margin-top: 0;
+}
+
 .custom-form .form-check-radio {
   position: relative;
   height: 100%;
   padding-left: 0;
+}
+
+.custom-form .input-group {
+  border: 1px solid var(--color-01);
 }
 
 .form-check-radio .form-check-input:hover,
@@ -56,7 +58,7 @@
 
 .form-check-radio .form-check-input[type=radio] {
   border-radius: .25rem;
-  border: 0;
+  border: 1px solid var(--color-01);
   width: 100%;
   margin-top: 0;
   margin-left: 0;
@@ -72,8 +74,49 @@
   text-align: center;
 }
 
-.form-control {
-  margin-bottom: 0;
+.custom-form .form-control {
+  border: 1px solid var(--color-01) !important;
+  margin-bottom: 2px !important;
+  margin-top: 10px;
 }
 
 /* End donate section */
+/* Button CSS */
+.custom-form .button {
+  position: relative;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+  color: #fff !important;
+}
+
+.custom-form  .button-left {
+  background: linear-gradient(to right, #315740 50%,
+          #3f7253 50%);
+  background-size: 200% 100%;
+  background-position: right;
+}
+
+.button-left:hover {
+  background-position: left;
+}
+#donate .image-box {
+  margin-top: 20px;
+}
+#donate .image-box img {
+  width: 100%;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+.col-6 {
+  padding-bottom: 15px;
+}
+.input-amount {
+  margin-bottom: 0 !important ;
+  margin-top: 0 !important;
+  border: 0 !important;
+}
+/* End button CSS */

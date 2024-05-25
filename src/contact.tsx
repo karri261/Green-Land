@@ -8,10 +8,12 @@ import Navbar from 'react-bootstrap/Navbar'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 import logo from './assets/image/logo.png'
-import footer_head from './assets/image/footer_head.jpg'
+import footer_head from './assets/image/footer_head_@.png'
+import contact_img from './assets/image/contact-img.jpg'
 
 interface Props { }
 
@@ -58,7 +60,7 @@ function Contact(props: Props) {
                                 <Nav className="justify-content-end flex-grow-1">
                                     <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
                                     <Nav.Link as={NavLink} to="/about-us" >About us</Nav.Link>
-                                    <Nav.Link href="#action3">Current Situation</Nav.Link>
+                                    <Nav.Link href="#action3">Reality</Nav.Link>
                                     <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
                                     <Nav.Link as={NavLink} to="/donate">
                                         <button className='button button-left'>Donate</button>
@@ -72,51 +74,26 @@ function Contact(props: Props) {
             {/* End Header*/}
             {/* Main */}
             <div className="contact-section">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-5 col-12 ms-auto mb-5 ">
+                <Container>
+                    <Row>
+                        <div className="col-xl-5 col-12 ms-auto mb-5 ">
                             <div className="contact-main">
-                                <h2 style={{ color: "#1a564b" }}>Get in touch</h2>
-                                <div className="contact-image d-flex flex-wrap">
-                                    <img src={logo} alt="" className="logo-img" />
-                                    <div className="d-flex flex-column justify-content-center ms-3">
-                                        <p className="mb-0">GREENLAND</p>
-                                        <p className="mb-0">
-                                            <strong>Save Wild Life Inc.</strong>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="contact-info">
-                                    <h5 className="mb-3 fs-4" style={{ color: "#1a564b" }}>
-                                        Contact Information
-                                    </h5>
-                                    <div className="list d-flex">
-                                        <p className="d-flex mb-2">
-                                            <FontAwesomeIcon icon={faLocationDot} />
-                                            <span>470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang</span>
-                                        </p>
-                                        <p className="d-flex mb-2">
-                                            <FontAwesomeIcon icon={faPhone} />
-                                            <span><a href="#">098-765-4321</a></span>
-                                        </p>
-                                        <p className="d-flex">
-                                            <FontAwesomeIcon icon={faEnvelope} />
-                                            <span><a href="#">greenland@gmail.com</a></span>
-                                        </p>
-                                    </div>
-                                    <button className='button button-left'>
-                                        <a href="https://maps.app.goo.gl/WxnATGwT3C8yXEzq6" target='_blank'>Get Direction</a>
-                                    </button>
-                                </div>
+                                <p className='address'>
+                                    <FontAwesomeIcon icon={faLocationDot} />
+                                    <span>470 Tran Dai Nghia, 
+                                        <br /><span>    </span> Da Nang</span>
+                                </p>
+                                <p className='phone'>
+                                    <FontAwesomeIcon icon={faPhone} />
+                                    <span>0236 3667 111</span> <br />
+                                    <span>greenland@gmail.com</span>
+                                </p>
                             </div>
                         </div>
-                        <div className="col-lg-5 col-12 mx-auto">
+                        <div className="col-xl-5 col-12 mx-auto">
                             <form action="#" className="contact-form custom-form">
-                                <h2 style={{ color: "#fff" }}>Contact Form</h2>
-                                <p className="mb-4" style={{ color: "#fff" }}>
-                                    You can only send to an email:
-                                    <a href="#">greenland@gmail.com</a>
-                                </p>
+                                <p style={{ color: "#315740" }}>Our contact</p>
+                                <h2>Get in touch</h2>
                                 <div className="row">
                                     <div className="col-lg-6 col-md-6 col-12">
                                         <input
@@ -155,19 +132,17 @@ function Contact(props: Props) {
                                     placeholder="What can we help you?"
                                     defaultValue={""}
                                 />
-                                <button type="submit" className="form-control ">
-                                    Send Message
-                                </button>
+                                <button type='submit' className="button button-left">Send Message</button>
                             </form>
                         </div>
-                    </div>
-                </div>
+                    </Row>
+                </Container>
             </div>
             {/* End main */}
             {/* Footer */}
             <div id="footer">
                 <div className='footer-head'>
-                 <img src={footer_head} alt="" />
+                    <img src={footer_head} alt="" />
                 </div>
                 <div className="footer_main">
                     <Container>

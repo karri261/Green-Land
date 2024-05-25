@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 
 import './index.css';
 import HomePage from './homepage';
-import Test from './test';
+import About from './about';
 import Contact from './contact'
 import Donate from './donate';
 
@@ -31,7 +31,7 @@ root.render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
-        <Route path="/about-us" element={<Test />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
       </Routes>

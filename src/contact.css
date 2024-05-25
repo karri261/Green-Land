@@ -10,6 +10,7 @@
 body {
     font-family: "Be Vietnam Pro" !important;
     overflow-x: hidden;
+
 }
 
 /* Button CSS */
@@ -35,66 +36,65 @@ body {
 
 /* End button CSS */
 /* Main */
+
 .contact-section {
-    padding-top: 100px;
-    background-color: #fff;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 
 .contact-main {
     padding-top: 40px;
 }
 
-.contact-section h2 {
-    font-size: 46px;
-    letter-spacing: -2px;
+.contact-main {
+    background-image: url('assets/image/contact-img.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 90%;
+    float: right;
+    height: 110%;
+    margin-bottom: 0;
+    position: relative;
 }
-
-.contact-image {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 20px 0 30px 0;
-    padding-bottom: 30px;
-    width: 100%;
-}
-
-.logo-img {
-    border-radius: 50%;
-    width: 65px;
-    height: 65px;
-    object-fit: cover;
-}
-.contact-info .list {
-    flex-direction: column;
-}
-.contact-info p {
-    display: flex;
-    align-items: center;
-}
-
-.contact-info p a {
-    text-decoration: none;
-    color: #000;
-}
-
-.contact-info p span {
-    margin-left: 10px;
-}
-
-.contact-info .button a {
-    text-decoration: none;
+.contact-main .address {
+    position: absolute;
     color: #fff;
+    bottom: 5px;
+    left: 10px;
+    font-size: 15px;
 }
+.contact-main .address span,
+.contact-main .phone span{
+    margin-left: 5px;
+}
+
+.contact-main .phone  {
+    position: absolute;
+    color: #fff;
+    bottom: 5px;
+    right: 10px;
+    font-size: 15px;
+}
+
 /* --------------------------- */
-
-.contact-form a {
+.contact-section .contact-form p {
+    font-size: 20px;
+    font-weight: bold
+}
+.contact-section .contact-form h2 {
+    font-size: 50px;
+    font-weight: bold
+}
+.contact-section .contact-form a {
     text-decoration: none;
     color: #fff;
 }
 
-.contact-form a:hover {
+.contact-section .contact-form a:hover {
     transition: all 0.3s;
 }
 
-.contact-info .contact-info-btn {
+.contact-section .contact-info .contact-info-btn {
     background: var(--dark-green);
     border: 2px solid transparent;
     border-radius: 100px;
@@ -106,80 +106,33 @@ body {
 }
 
 .contact-section .contact-form {
-    background: var(--dark-green);
+    /* background: var(--dark-green); */
     border-radius: 10px;
     padding: 40px;
 }
 
 .custom-form .form-control {
-    border: none;
+    border: 1px solid #eee;
     margin-bottom: 24px;
     padding: 13px;
 }
 
-.custom-form button[type="submit"] {
-    background: #34675c;
-    border: none;
-    border-radius: 100px;
-    color: var(--white);
-    font-weight: 600;
-    transition: all 0.3s;
-    margin-bottom: 0;
+.custom-form .col-lg-6 {
+    margin-top: 15px;
 }
-
-.custom-form button[type="submit"]:hover,
-.contact-info .contact-info-btn:hover {
-    color: black;
+.contact-section .button {
+    margin-top: 15px;
+    width: 100%;
 }
 /* End main */
-/* Section 6 */
-#footer .footer-head {
-    background-color: #fff;
-}
-#footer img {
-    margin-top: 50px;
-    width: 100%;
-}
-#footer .footer_main {
-    background-color: #222222;
-}
-#footer .footer_main .inner-main {
-    padding: 30px;
-    color: #fff;
-    text-align: justify;
-}
-#footer .footer_main .inner-main .contact-list .icon {
-    font-size: 20px;
-    padding: 10px;
-}
-#footer .footer_main .inner-main .row .col-lg-3 ul {
-    padding-left: 30px;
-}
-#footer .footer_main ul .head {
-    font-size: 25px;
-}
-#footer .footer_main ul .email-input {
-    width: 100%;
-    margin-top: 10px;
-}
-#footer .footer_main ul .email-input input {
-    padding: 8px 15px;
-    border-radius: 25px;
-}
-#footer .footer_main .copyright-box {
-    text-align: center;
-}
-/* End footer */
+
 /* Responsive */
 @media screen and (max-width: 992px) {
-    .contact-section .contact-main {
-        text-align: center;
-    }
-    .contact-section .contact-main .contact-image {
-        justify-content: center;
-    }
-    .contact-section .contact-main .contact-image p {
-        text-align: left;
+    .contact-main {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 0;
+        position: relative;
     }
 }
 /* End responsive */
