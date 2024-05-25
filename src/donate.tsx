@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, Link } from 'react-router-dom';
 import './donate.css';
 
 import axios from 'axios';
@@ -515,7 +515,7 @@ function Donate(props: Props) {
                   <div className="contact-list">
                     <a href="https://www.facebook.com/" target='_blank'>
                       <FontAwesomeIcon className='icon' icon={faFacebookF} />
-                      </a>
+                    </a>
                     <a href="https://www.instagram.com/" target='blank'>
                       <FontAwesomeIcon className='icon' icon={faInstagram} />
                     </a>
@@ -524,16 +524,27 @@ function Donate(props: Props) {
                     </a>
                     <a href="https://www.linkedin.com/" target='blank'>
                       <FontAwesomeIcon className='icon' icon={faLinkedin} />
-                    </a>    
+                    </a>
                   </div>
                 </Col>
                 <Col lg={2} xs={6}>
                   <ul>
                     <li className='head'><b>Navigation</b></li>
-                    <li>About us</li>
-                    <li>Current Situation</li>
-                    <li>Wildlife's List</li>
-                    <li>Contact</li>
+                    <li>
+                      <Link to='/home'>Home</Link>
+                    </li>
+                    <li>
+                      <Link to='/about-us'>About us</Link>
+                    </li>
+                    <li>
+                      <Link to='/reality'>Reality</Link>
+                    </li>
+                    <li>
+                      <Link to='/contact'>Contact</Link>
+                    </li>
+                    <li>
+                      <Link to='/donate'>Donate</Link>
+                    </li>
                   </ul>
                 </Col>
                 <Col lg={3} xs={6}>

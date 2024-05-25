@@ -426,10 +426,21 @@ function Reality(props: Props) {
                 <Col lg={2} xs={6}>
                   <ul>
                     <li className='head'><b>Navigation</b></li>
-                    <li>About us</li>
-                    <li>Current Situation</li>
-                    <li>Wildlife's List</li>
-                    <li>Contact</li>
+                    <li>
+                      <Link to='/home'>Home</Link>
+                    </li>
+                    <li>
+                      <Link to='/about-us'>About us</Link>
+                    </li>
+                    <li>
+                      <Link to='/reality'>Reality</Link>
+                    </li>
+                    <li>
+                      <Link to='/contact'>Contact</Link>
+                    </li>
+                    <li>
+                      <Link to='/donate'>Donate</Link>
+                    </li>
                   </ul>
                 </Col>
                 <Col lg={3} xs={6}>

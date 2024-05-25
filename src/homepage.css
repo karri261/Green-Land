@@ -989,6 +989,10 @@ ul {
     padding: 3px 10px;
     background-color: #fff;
 }
+#footer .footer_main a {
+    text-decoration: none;
+    color: #fff;
+}
 
 /* End section footer */
 /* Responsive */
