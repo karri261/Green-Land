@@ -381,7 +381,7 @@ function HomePage(props: Props) {
          <div id="work" data-aos="flip-left">
             <Container>
                <div className="title">
-                  <h4>OUR WORKING PROCES</h4>
+                  <h4>OUR WORKING PROCESS</h4>
                   <h2>WE DONATE TO WILDLIFE'S PROJECTS</h2>
                </div>
                <Row>

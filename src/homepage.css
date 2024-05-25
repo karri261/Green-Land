@@ -10,7 +10,7 @@
 }
 
 body {
-    min-width: 400px;
+    min-width: 576px;
     background-image: url(assets/image/body_bg.jpg);
 }
 
