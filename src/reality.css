@@ -498,7 +498,7 @@
 .vid-modal-close-btn {
     position: absolute;
     top: 80px;
-    right: 100px;
+    right: 0;
     color: rgba(0, 0, 0, 0.5);
     font-size: 2.3em;
     margin: 20px 30px;
