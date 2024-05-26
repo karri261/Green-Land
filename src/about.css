@@ -512,6 +512,9 @@ ul {
     #journey .sample-card {
         width: 100vw;
     }
+    #hero-section h1 {
+        font-size: 60px;
+    }
 }
 
 @media screen and (max-width: 500px) {
