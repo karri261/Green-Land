@@ -351,9 +351,9 @@ function About(props: Props) {
                         <Col lg={1}></Col>
                         <Col lg={4}>
                             <div className="image-list">
-                                <img src={'https://baolamdong.vn/file/e7837c02845ffd04018473e6df282e92/092023/hinh_5_20230907082749_20230907084247.jpg'} alt="" data-aos="fade-left" />
-                                <img src={end_1} alt="" data-aos="fade-right" />
-                                <img src={'https://vcdn1-giadinh.vnecdn.net/2024/04/10/image002-3224-1712748148.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=Ber-r6cyiK-4hQmVfhDMbA'} alt="" data-aos="fade-left" />
+                                <img src={'https://baolamdong.vn/file/e7837c02845ffd04018473e6df282e92/092023/hinh_5_20230907082749_20230907084247.jpg'} alt=""  />
+                                <img src={end_1} alt="" />
+                                <img src={'https://vcdn1-giadinh.vnecdn.net/2024/04/10/image002-3224-1712748148.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=Ber-r6cyiK-4hQmVfhDMbA'} alt="" />
                             </div>
                         </Col>
                     </Row>

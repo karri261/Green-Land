@@ -35,16 +35,16 @@ ul {
 #hero-section {
     background-image: url("assets/image/about_bg.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    padding: 200px 0;
-    height: 100vh;
+    padding: 250px 0;
 }
 
 #hero-section h1 {
     margin-left: 0;
     text-align: left;
     color: #fff;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 800;
 }
 
@@ -292,15 +292,18 @@ ul {
 #journey .sample-card .title:hover a {
     color: var(--color-03);
 }
+
 #about a {
     color: #fff;
     text-decoration: none;
 }
+
 /* End journey */
 /* Team */
 #team {
     padding: 60px 0;
 }
+
 #team h2 {
     text-align: center;
     position: relative;
@@ -334,9 +337,11 @@ ul {
     bottom: 1px;
     left: calc(50% - 20px);
 }
+
 #team .team-member {
     justify-content: center;
 }
+
 #team .team-member .leader-infor {
     position: relative;
     overflow: hidden;
@@ -345,7 +350,7 @@ ul {
 }
 
 #team .team-member .leader-infor .image {
-    aspect-ratio: 8 / 9 ;
+    aspect-ratio: 8 / 9;
 }
 
 #team .team-member .leader-infor .image img {
@@ -353,6 +358,7 @@ ul {
     height: 100%;
     object-fit: fill;
 }
+
 #team .team-member .leader-infor:hover {
     cursor: pointer;
 }
@@ -471,52 +477,94 @@ ul {
 #join {
     padding-top: 50px;
 }
+
 #join .row {
     align-items: center;
     justify-content: center;
 }
+
 #join .content-box {
     display: flex;
     flex-direction: column;
     align-items: baseline;
 }
+
 #join .content-box .head-title {
     font-weight: bold;
     color: var(--color-03);
 }
+
 #join .content-box h2 {
     font-size: 50px;
     font-weight: 800;
 }
+
 #join .content-box .infor {
     color: #929499;
     font-weight: 350;
     margin: 20px 0;
 }
+
 #join .image-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #join .image-list img {
     width: 70%;
     aspect-ratio: 16 / 9;
     margin-top: 20px;
 }
+
 #join a {
     text-decoration: none;
 }
+
 /* End Join */
+@media screen and (max-width: 992px) {
+    #hero-section h1 {
+        font-size: 50px;
+    }
+}
+
 @media screen and (max-width: 786px) {
     #journey .sample-card {
         width: 100vw;
     }
+
     #hero-section h1 {
         font-size: 60px;
     }
 }
 
-@media screen and (max-width: 500px) {
-
+@media screen and (max-width: 576px) {
+    #hero-section h1 {
+        font-size: 40px;
+    }
 }
+
+@media screen and (max-width : 400px) {
+    #hero-section h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    #join {
+        text-align: center;
+    }
+    #join .content-box{
+        justify-content: center;
+        align-items: center;
+    }
+    #footer .col-6 {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+@media screen and (max-width : 100px) {
+        #footer .col-6 {
+            width: 100% !important;
+            text-align: center;
+        }
+    }

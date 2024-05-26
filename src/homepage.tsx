@@ -95,8 +95,8 @@ function HomePage(props: Props) {
             }
          },
       ],
-      prevArrow: <FontAwesomeIcon icon={faAngleLeft} />,
-      nextArrow: <FontAwesomeIcon icon={faAngleRight} />,
+      // prevArrow: <FontAwesomeIcon icon={faAngleLeft} />,
+      // nextArrow: <FontAwesomeIcon icon={faAngleRight} />,
    };
 
    var settings2 = {
@@ -251,7 +251,7 @@ function HomePage(props: Props) {
             <Container>
                <Row>
                   <Col lg={6}>
-                     <div className="image-box" data-aos="flip-left">
+                     <div className="image-box">
                         <div className="shape"></div>
                         <div className="image">
                            <img src={about_1} alt="" />
@@ -259,7 +259,7 @@ function HomePage(props: Props) {
                      </div>
                   </Col>
                   <Col lg={6}>
-                     <div className="content-box" data-aos="flip-left">
+                     <div className="content-box">
                         <h2>WELCOME TO GREEN LAND</h2>
                         <h4>Help us to protect wildlife around the world.</h4>
                         <p>We are an organization dedicated to protecting and preserving the biodiversity of our planet. Our mission is to save species from extinction and safeguard their natural habitats. We strive to raise public awareness and promote sustainable conservation measures through our relentless efforts.
@@ -378,7 +378,7 @@ function HomePage(props: Props) {
          </div>
          {/* End section recentproj */}
          {/* How we work section */}
-         <div id="work" data-aos="flip-left">
+         <div id="work">
             <Container>
                <div className="title">
                   <h4>OUR WORKING PROCESS</h4>

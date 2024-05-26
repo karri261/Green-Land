@@ -10,14 +10,16 @@
 }
 
 body {
-    min-width: 576px;
+    min-width: 320px;
     background-image: url(assets/image/body_bg.jpg);
 }
 
 ul {
     list-style-type: none;
 }
-
+ .slick-next {
+    display: none !important;
+ }
 
 
 /* Button CSS */
@@ -127,19 +129,18 @@ ul {
 /* End header */
 /* Hero section */
 .hero-section {
-    background-image: url("assets/image/hero-01.jpg");
+    background-image: url("assets/image/hero-01_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     position: relative;
-    width: 100%;
+    /* width: 100vw; */
     height: 100vh;
     overflow: hidden;
 }
 
 .layer {
     position: absolute;
-    min-width: 576px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -202,6 +203,7 @@ ul {
 #introduce {
     padding-top: 150px;
     padding-bottom: 100px;
+    width: 100%;
 }
 
 #introduce .image-box {
@@ -1040,5 +1042,54 @@ ul {
         font-weight: 700;
         line-height: 80px;
         cursor: default;
+    }
+}
+
+
+@media screen and (max-width : 400px){
+    .logo .brand-name {
+        font-weight: 600;
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .navbar-toggler {
+        font-size: 14px !important;
+    }
+
+    .text-container {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        cursor: default;
+    }
+
+    #introduce .content-box h2 {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 800;
+        padding-top: 11px;
+    }
+    #introduce .content-box ul {
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+    #introduce .content-box ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #subscribe .inner-main .inner-content h2 {
+        font-weight: 700;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width : 100px) {
+    #footer .col-6 {
+        width: 100% !important;
+        text-align: center;
     }
 }

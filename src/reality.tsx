@@ -107,7 +107,7 @@ function Reality(props: Props) {
 
       seeMoreBtn.addEventListener('click', toggleCard);
 
-      // Store the toggleCard function on the button element so we can remove it later
+      //     // Store the toggleCard function on the button element so we can remove it later
       (seeMoreBtn as any).toggleCard = toggleCard;
 
       if (textContent.scrollHeight <= 100) {
@@ -203,8 +203,6 @@ function Reality(props: Props) {
       <div className="homepage-poster">
         <figure className="homepage-poster__image">
           <picture>
-            {/* <source srcSet={header_bg} media="(min-width: 1258px)" /> */}
-            {/* <img alt="" src={"https://getwallpapers.com/wallpaper/full/7/5/1/1016772-large-lion-wallpaper-1920x1200-computer.jpg"} /> */}
             <img src={header_bg} alt="" />
           </picture>
         </figure>
@@ -394,8 +392,8 @@ function Reality(props: Props) {
             </a>
           </div>
         </div>
-        {/* <button className="more-animals">More</button> */}
       </section>
+
       {/* Footer */}
       <div id="footer">
         <div className='footer-head'>
