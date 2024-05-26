@@ -280,7 +280,7 @@ function About(props: Props) {
                                         </div>
                                         <div className="title">
                                             <a href="#">
-                                                10 YEARS ANIVERARY OF GREEN LAND
+                                                10 YEARS ANIVESARY OF GREEN LAND
                                             </a>
                                         </div>
                                     </div>
