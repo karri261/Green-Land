@@ -25,7 +25,7 @@ import footer_head from './assets/image/footer_head.png'
 
 interface Props { }
 
-function Donate(props: Props) {
+function Donate2(props: Props) {
     const { } = props;
 
     const [isScrolledPast, setIsScrolledPast] = useState(false);
@@ -132,12 +132,12 @@ function Donate(props: Props) {
                 <Container>
                     <Row>
                         <Col xl={3} className='image'>
-                            <img src={project_1} alt="" />
+                            <img src={project_3} alt="" />
                         </Col>
                         <Col xl={4} className='content'>
                             <h6>YOU ARE DONATING TO:</h6>
-                            <h4>Nature's Keeper</h4>
-                            <p>Safeguarding our planet's biodiversity and ecosystems for future generations</p>
+                            <h4>EcoProtect Alliance</h4>
+                            <p>Uniting communities to conserve natural resources, combat climate change for a healthier planet!</p>
                             <ul className='socials-list'>
                                 <li>
                                     <FontAwesomeIcon className='icon' icon={faFacebookF} />
@@ -233,16 +233,17 @@ function Donate(props: Props) {
                 <Container>
                     <Row>
                         <Col xl={7} className='descript'>
-                            <h3>INTRODUCING THE NATURE'S KEEPERS</h3>
+                            <h3>INTRODUCING THE ECOPROTECT ALLIANCE</h3>
                             <p>
-                                In a world where environmental conservation is paramount, the Nature's Keeper Project stands as a beacon of hope and action. Our initiative is driven by a simple yet powerful mission: to safeguard our planet's natural treasures for generations to come.
-                                Through a combination of community engagement, scientific research, and innovative conservation practices, we strive to protect biodiversity hotspots, preserve fragile ecosystems, and promote sustainable living practices.
+                                Our mission is to unite individuals, communities, and organizations in the fight against environmental degradation, promoting sustainable practices, and protecting our planet's precious ecosystems.
+
+                                The EcoProtect Alliance operates on the principles of partnership and shared responsibility. We believe that by working together, we can address the most pressing environmental challenges of our time, from climate change and pollution to habitat destruction and biodiversity loss. Our projects span a wide range of activities, including conservation efforts, sustainable development programs, and environmental education campaigns.
                             </p>
                             <p>
-                                At the heart of our project lies a deep reverence for nature and a commitment to nurturing a harmonious relationship between humanity and the Earth. By empowering individuals, communities, and organizations to become stewards of the environment, we believe in creating a future where both people and nature thrive in balance.
+                                Central to our mission is the empowerment of local communities. We work hand-in-hand with grassroots organizations, indigenous peoples, and environmental activists to create solutions that are both effective and inclusive. By fostering a global network of eco-warriors, we aim to inspire collective action and drive meaningful change.
                             </p>
                             <p>
-                                Join us in our journey to become Nature's Keepers and ensure a brighter, greener tomorrow for all !
+                                Join the EcoProtect Alliance and be part of a movement dedicated to preserving our planet for future generations. Together, we can create a sustainable future where nature and humanity thrive in harmony!
                             </p>
                             <hr />
                         </Col>
@@ -342,4 +343,4 @@ function Donate(props: Props) {
     );
 }
 
-export default Donate;
+export default Donate2;

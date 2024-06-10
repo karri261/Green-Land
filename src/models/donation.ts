@@ -6,10 +6,6 @@ const donationSchema = new mongoose.Schema({
     required: true,
     ref: 'Project'
   },
-  cardName: {
-    type: String,
-    required: true
-  },
   amount: {
     type: Number,
     required: true

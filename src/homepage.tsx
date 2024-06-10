@@ -183,9 +183,6 @@ function HomePage(props: Props) {
       }, 100);
    };
 
-   // Donate
-
-
    return (
       <>
          {/* Header*/}
@@ -336,10 +333,7 @@ function HomePage(props: Props) {
                         <div className="image-title">Nature's Keepers</div>
                         <div className="card__data">
                            <h2 className="card__title">Nature's Keepers</h2>
-                           <p className="card__description">
-                              Collected  $450 of  $800
-                           </p>
-                           <Link to="/donate" className='card__button button button-left'>
+                           <Link to="/payment/project1" className='card__button button button-left'>
                               Donate now
                            </Link>
                         </div>
@@ -350,10 +344,7 @@ function HomePage(props: Props) {
                         <div className="image-title">Forest Friends Program</div>
                         <div className="card__data">
                            <h2 className="card__title">Forest Friends Program</h2>
-                           <p className="card__description">
-                              Collected  $450 of  $800
-                           </p>
-                           <Link to="/donate" className='card__button button button-left'>
+                           <Link to="/payment/project2" className='card__button button button-left'>
                               Donate now
                            </Link>
                         </div>
@@ -364,10 +355,7 @@ function HomePage(props: Props) {
                         <div className="image-title">EcoProtect Alliance</div>
                         <div className="card__data">
                            <h2 className="card__title">EcoProtect Alliance</h2>
-                           <p className="card__description">
-                              Collected  $450 of  $800
-                           </p>
-                           <Link to="/donate" className='card__button button button-left'>
+                           <Link to="/payment/project3" className='card__button button button-left'>
                               Donate now
                            </Link>
                         </div>

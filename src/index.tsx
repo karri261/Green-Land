@@ -5,9 +5,13 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import './index.css';
 import HomePage from './homepage';
 import About from './about';
-import Contact from './contact'
-import Donate from './donate';
+import Contact from './contact';
+import Donation from './donation';
 import Reality from './reality';
+import Donate from './donate'
+import Donate2 from './donate2';
+import Donate3 from './donate3'
+import VnpayReturn from './VNpayReturn';
 
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,6 +19,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 // Scroll to head of page
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -35,7 +40,11 @@ root.render(
         <Route path="/about-us" element={<About />} />
         <Route path="/reality" element={<Reality />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/donate" element={<Donate />} />
+        <Route path="/donate" element={<Donation />} />
+        <Route path="/payment/project1" element={<Donate />} />
+        <Route path="/payment/project2" element={<Donate2 />} />
+        <Route path="/payment/project3" element={<Donate3 />} />
+        <Route path="/vnpay_return" element={<VnpayReturn />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

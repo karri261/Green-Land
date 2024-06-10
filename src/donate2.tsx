@@ -25,7 +25,7 @@ import footer_head from './assets/image/footer_head.png'
 
 interface Props { }
 
-function Donate(props: Props) {
+function Donate2(props: Props) {
     const { } = props;
 
     const [isScrolledPast, setIsScrolledPast] = useState(false);
@@ -132,12 +132,12 @@ function Donate(props: Props) {
                 <Container>
                     <Row>
                         <Col xl={3} className='image'>
-                            <img src={project_1} alt="" />
+                            <img src={project_2} alt="" />
                         </Col>
                         <Col xl={4} className='content'>
                             <h6>YOU ARE DONATING TO:</h6>
-                            <h4>Nature's Keeper</h4>
-                            <p>Safeguarding our planet's biodiversity and ecosystems for future generations</p>
+                            <h4>Forest's Friendst</h4>
+                            <p>Dedicated to protecting and restoring forests, ensuring a sustainable future for our planet!</p>
                             <ul className='socials-list'>
                                 <li>
                                     <FontAwesomeIcon className='icon' icon={faFacebookF} />
@@ -233,16 +233,15 @@ function Donate(props: Props) {
                 <Container>
                     <Row>
                         <Col xl={7} className='descript'>
-                            <h3>INTRODUCING THE NATURE'S KEEPERS</h3>
+                            <h3>INTRODUCING THE FOREST'S FRIENDS</h3>
                             <p>
-                                In a world where environmental conservation is paramount, the Nature's Keeper Project stands as a beacon of hope and action. Our initiative is driven by a simple yet powerful mission: to safeguard our planet's natural treasures for generations to come.
-                                Through a combination of community engagement, scientific research, and innovative conservation practices, we strive to protect biodiversity hotspots, preserve fragile ecosystems, and promote sustainable living practices.
+                                Our mission is simple yet profound: to be the best friend the forest can have by ensuring its health, biodiversity, and resilience for future generations. Our project focuses on a holistic approach to forest conservation. We work tirelessly to restore degraded forest areas, protect existing ones, and promote sustainable practices that benefit both the environment and local communities. Through reforestation efforts, habitat preservation, and education, we aim to combat deforestation and foster a deep connection between people and nature.
                             </p>
                             <p>
-                                At the heart of our project lies a deep reverence for nature and a commitment to nurturing a harmonious relationship between humanity and the Earth. By empowering individuals, communities, and organizations to become stewards of the environment, we believe in creating a future where both people and nature thrive in balance.
+                                At the core of the Forest Friend Project is a belief in the power of collective action. We collaborate with environmentalists, scientists, volunteers, and indigenous communities to create a network of dedicated forest friends. Together, we champion the cause of our planet's lungs, ensuring they continue to provide clean air, rich biodiversity, and natural beauty.
                             </p>
                             <p>
-                                Join us in our journey to become Nature's Keepers and ensure a brighter, greener tomorrow for all !
+                                Join us in the Forest Friend Project and become a guardian of the green. Together, we can nurture the forests that nurture us all!
                             </p>
                             <hr />
                         </Col>
@@ -342,4 +341,4 @@ function Donate(props: Props) {
     );
 }
 
-export default Donate;
+export default Donate2;

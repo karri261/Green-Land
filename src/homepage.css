@@ -54,7 +54,7 @@ ul {
 }
 
 .scrolled-past {
-    background-color: white;
+    background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -91,6 +91,7 @@ ul {
     margin-left: 15px;
     font-weight: 500;
     color: var(--color-01);
+    /* color: #fff; */
     transition: color 0.6s;
     position: relative;
 }
@@ -494,12 +495,11 @@ ul {
     transition: opacity 0.7s, transform 0.7s;
     z-index: 10;
 }
+
 #recent-proj .card__data .card__title {
     font-size: 20px;
     font-weight: bold;
-}
-#recent-proj .card__data .card__description {
-    font-size: 18px;
+    margin-bottom: 20px;
 }
 #recent-proj .card__data a {
     text-decoration: none;
@@ -557,6 +557,7 @@ ul {
         overflow: hidden;
     }
 }
+
 /* End recent project */
 /* How we work section */
 #work {
