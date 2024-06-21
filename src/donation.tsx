@@ -101,7 +101,7 @@ const Donation: React.FC = () => {
                                     <Nav.Link as={NavLink} to="/home">{t('home')}</Nav.Link>
                                     <Nav.Link as={NavLink} to="/about-us">{t('about_us')}</Nav.Link>
                                     <Nav.Link as={NavLink} to="/reality">{t('reality')}</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/contact">{t('contact')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/gallery">{t('gallery')}</Nav.Link>
                                     <Nav.Link as={NavLink} to="/donate">
                                         <button className='button button-left'>{t('donate')}</button>
                                     </Nav.Link>

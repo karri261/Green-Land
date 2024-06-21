@@ -16,11 +16,14 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from './assets/image/logo.png';
 import journey_1 from './assets/image/journey-1.jpg'
 import journey_2 from './assets/image/journey-2.jpg'
-import leader_1 from './assets/image/leader1.jpg'
-import leader_2 from './assets/image/leader2.jpg'
-import leader_3 from './assets/image/leader3.jpg'
+import leader_1 from './assets/image/leader1.png'
+import leader_2 from './assets/image/leader2.png'
+import leader_3 from './assets/image/leader3.png'
 import end_1 from './assets/image/about_end_1.png'
 import footer_head from './assets/image/footer_head.png'
+
+import flagEn from './assets/image/en.svg';
+import flagVi from './assets/image/vi.svg';
 
 import { useTranslation } from 'react-i18next';
 import i18n from './i18n';
@@ -90,6 +93,22 @@ function About(props: Props) {
         return objectWidth - vw + vh + 150;
     };
 
+    // Change language
+    const [language, setLanguage] = useState<string>(localStorage.getItem('language') || 'en');
+    const [flag, setFlag] = useState<string>(localStorage.getItem('flag') || flagEn);
+
+    useEffect(() => {
+        i18n.changeLanguage(language);
+        setFlag(language === 'en' ? flagEn : flagVi);
+    }, [language]);
+
+    const changeLanguage = () => {
+        const newLanguage = language === 'en' ? 'vi' : 'en';
+        setLanguage(newLanguage);
+        localStorage.setItem('language', newLanguage);
+        localStorage.setItem('flag', newLanguage === 'en' ? flagEn : flagVi);
+    };
+
     const { t } = useTranslation();
 
     return (
@@ -119,14 +138,13 @@ function About(props: Props) {
                                     <Nav.Link as={NavLink} to="/home">{t('home')}</Nav.Link>
                                     <Nav.Link as={NavLink} to="/about-us">{t('about_us')}</Nav.Link>
                                     <Nav.Link as={NavLink} to="/reality">{t('reality')}</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/contact">{t('contact')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/gallery">{t('gallery')}</Nav.Link>
                                     <Nav.Link as={NavLink} to="/donate">
                                         <button className='button button-left'>{t('donate')}</button>
                                     </Nav.Link>
-                                    <NavDropdown title={t('language')} id="basic-nav-dropdown">
-                                        <NavDropdown.Item onClick={() => i18n.changeLanguage('en')}>English</NavDropdown.Item>
-                                        <NavDropdown.Item onClick={() => i18n.changeLanguage('vi')}>Tiếng Việt</NavDropdown.Item>
-                                    </NavDropdown>
+                                    <Nav.Link onClick={changeLanguage} style={{ cursor: 'pointer' }}>
+                                        <img src={flag} alt="flag" width="40" height="30" /> {language.toUpperCase()}
+                                    </Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
@@ -179,7 +197,7 @@ function About(props: Props) {
             <div id="journey">
                 <div className="container">
                     <div className="space-holder" ref={spaceHolderRef}>
-                        <h2>OUR JOURNEY</h2>
+                        <h2>{t('our_journey')}</h2>
                         <div className="sticky" ref={stickyRef}>
                             <div className="horizontal" ref={horizontalRef}>
                                 <section role="feed" className="cards">
@@ -197,7 +215,7 @@ function About(props: Props) {
                                         </div>
                                         <div className="title">
                                             <a href="#">
-                                                FOUNDATING GREEN LAND
+                                                {t('foundating')}
                                             </a>
                                         </div>
                                     </div>
@@ -215,7 +233,7 @@ function About(props: Props) {
                                         </div>
                                         <div className="title">
                                             <a href="#">
-                                                LAUNCH AN ACTION CAMPAIGN FOR WILDLIFE
+                                                {t('launch')}
                                             </a>
                                         </div>
                                     </div>
@@ -233,7 +251,7 @@ function About(props: Props) {
                                         </div>
                                         <div className="title">
                                             <a href="#">
-                                                "DAY FOR WILDLIDE" CAMPAIGN
+                                                {t('campaign')}
                                             </a>
                                         </div>
                                     </div>
@@ -251,7 +269,7 @@ function About(props: Props) {
                                         </div>
                                         <div className="title">
                                             <a href="#">
-                                                COOPERATE WITH WWF
+                                                {t('cooperate')}
                                             </a>
                                         </div>
                                     </div>
@@ -269,7 +287,7 @@ function About(props: Props) {
                                         </div>
                                         <div className="title">
                                             <a href="#">
-                                                EARTH DAY ACTIVITIES
+                                                {t('earthday')}
                                             </a>
                                         </div>
                                     </div>
@@ -287,7 +305,7 @@ function About(props: Props) {
                                         </div>
                                         <div className="title">
                                             <a href="#">
-                                                10 YEARS ANIVESARY OF GREEN LAND
+                                                {t('anniversary')}
                                             </a>
                                         </div>
                                     </div>
@@ -301,66 +319,79 @@ function About(props: Props) {
             {/* Team */}
             <div id="team">
                 <Container>
-                    <h2>OUR LEADERS</h2>
-                    <Row className='team-member'>
-                        <Col lg={4} sm={7} className='leader-infor'>
-                            <div className="content_leader">
-                                <ul className="list_icon">
-                                    <li><a href="#" ><i className="fa-brands fa-instagram" id="icon"></i></a></li>
-                                    <li><a href="#" ><i className="fa-brands fa-facebook-f" id="icon"></i></a></li>
-                                    <li><a href="#" ><i className="fa-brands fa-twitter" id="icon"></i></a></li>
-                                </ul>
-                                <img src="l2.png" className="image_ld" />
-                                <div className="text-ld">
-                                    <span className="name">NGUYEN DUC TRIEN</span>
-                                    <span className="posi">Co-founder + Leadership</span>
-                                    <span className="mail">trien231@gmail.com</span>
-                                    <span className="intro-text">
-                                        Trien is has over 10 years of experience in leading wildlife conservation projects.
-                                        Previously, he worked at WWF (World Wildlife Fund) for 5 years as a project manager.
-                                    </span>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col lg={4} sm={8} className='leader-infor'>
-                            <div className="content_leader">
-                                <div className="text-ld" id="text-ld2">
-                                    <span className="name">DUONG THANH TRI</span>
-                                    <span className="posi">Co-founder + Design</span>
-                                    <span className="mail">thatri100@gmail.com</span>
-                                    <span className="intro-text" id="intro-text2">
-                                        Tri, co-founder and design expert, has over 7 years of experience in design and conservation communication.
-                                        Previously, he worked at Greenpeace for 3 years as Head of Design
-                                    </span>
-                                </div>
-                                <img src="l1.png" className="image_ld" />
-                                <ul className="list_icon">
-                                    <li><a href="#" ><i className="fa-brands fa-instagram" id="icon"></i></a></li>
-                                    <li><a href="#" ><i className="fa-brands fa-facebook-f" id="icon"></i></a></li>
-                                    <li><a href="#" ><i className="fa-brands fa-twitter" id="icon"></i></a></li>
-                                </ul>
-                            </div>
-                        </Col>
-                        <Col lg={4} sm={8} className='leader-infor'>
-                            <div className="content_leader">
-                                <ul className="list_icon">
-                                    <li><a href="#" ><i className="fa-brands fa-instagram" id="icon"></i></a></li>
-                                    <li><a href="#" ><i className="fa-brands fa-facebook-f" id="icon"></i></a></li>
-                                    <li><a href="#" ><i className="fa-brands fa-twitter" id="icon"></i></a></li>
-                                </ul>
-                                <img src="l3.png" className="image_ld"/>
+                    <h2>{t('leader')}</h2>
+                    <div className='team-member'>
+                        <div className='leader-infor'>
+                            <Row className="content_leader">
+                                <Col lg={1} xs={2}>
+                                    <ul className="list_icon">
+                                        <li><a href="https://www.instagram.com/" ><i className="fa-brands fa-instagram" id="icon"></i></a></li>
+                                        <li><a href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f" id="icon"></i></a></li>
+                                        <li><a href="https://x.com/?lang=vi" ><i className="fa-brands fa-twitter" id="icon"></i></a></li>
+                                    </ul>
+                                </Col>
+                                <Col lg={1} xs={1}><p></p></Col>
+                                <Col lg={3} xs={5}>
+                                    <img src={leader_1} className="image_ld" />
+                                </Col>
+                                <Col lg={7} xs={12}>
                                     <div className="text-ld">
-                                        <span className="name">NGUYEN NGOC XUAN QUYNH</span>
-                                        <span className="posi">Management + Strategy</span>
-                                        <span className="mail">quynh231@gmail.com</span>
-                                        <span className="intro-text">
-                                            Quynh has over 8 years of experience in nature conservation.
-                                            She held the position of Strategy Director at Cúc Phương National Park for 4 years.
-                                        </span>
+                                        <p className="name">{t('name_1')}</p>
+                                        <p className="posi">{t('pos_1')}</p>
+                                        <p className="mail"><b>Email: </b>triennd.23ai@vku.udn.vn</p>
+                                        <p className="intro-text">{t('des_1')}</p>
                                     </div>
-                            </div>
-                        </Col>
-                    </Row>
+                                </Col>
+                            </Row>
+                        </div>
+                        <hr />
+                        <div className='leader-infor'>
+                            <Row className="content_leader">
+                                <Col lg={7} xs={12}>
+                                    <div className="text-ld">
+                                        <p className="name">{t('name_2')}</p>
+                                        <p className="posi">{t('pos_2')}</p>
+                                        <p className="mail"><b>Email: </b>tridt.23ai@vku.udn.vn</p>
+                                        <p className="intro-text">{t('des_2')}</p>
+                                    </div>
+                                </Col>
+                                <Col lg={4} xs={6}>
+                                    <img src={leader_2} className="image_ld" />
+                                </Col>
+                                <Col lg={1} xs={2}>
+                                    <ul className="list_icon">
+                                        <li><a href="https://www.instagram.com/" ><i className="fa-brands fa-instagram" id="icon"></i></a></li>
+                                        <li><a href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f" id="icon"></i></a></li>
+                                        <li><a href="https://x.com/?lang=vi" ><i className="fa-brands fa-twitter" id="icon"></i></a></li>
+                                    </ul>
+                                </Col>
+                            </Row>
+                        </div>
+                        <hr />
+                        <div className='leader-infor'>
+                            <Row className="content_leader">
+                                <Col lg={1} xs={2}>
+                                    <ul className="list_icon">
+                                        <li><a href="https://www.instagram.com/" ><i className="fa-brands fa-instagram" id="icon"></i></a></li>
+                                        <li><a href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f" id="icon"></i></a></li>
+                                        <li><a href="https://x.com/?lang=vi" ><i className="fa-brands fa-twitter" id="icon"></i></a></li>
+                                    </ul>
+                                </Col>
+                                <Col lg={1} xs={1}><p></p></Col>
+                                <Col lg={3} xs={5}>
+                                    <img src={leader_3} className="image_ld" />
+                                </Col>
+                                <Col lg={7} xs={12}>
+                                    <div className="text-ld">
+                                        <p className="name">{t('name_3')}</p>
+                                        <p className="posi">{t('pos_3')}</p>
+                                        <p className="mail"><b>Email: </b>quynhnnx.23ai@vku.udn.vn</p>
+                                        <p className="intro-text">{t('des_3')}</p>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                    </div>
                 </Container>
             </div>
             {/* End team */}
@@ -370,15 +401,15 @@ function About(props: Props) {
                     <Row>
                         <Col lg={7}>
                             <div className="content-box" data-aos="flip-left">
-                                <p className='head-title'>VOLUNTEER FOR THE CAMPAIGN</p>
-                                <h2>JOIN OUR TEAM <br />
-                                    AND SAVE THE WILDLIFE!</h2>
-                                <p className='infor'>We protect wildlife for many reasons. It is a source of inspiration. It nurtures a sense of wonder. It is integral to the balance of nature.
-                                    <br />In our work, Green Land focuses on saving populations of the most ecologically, economically and culturally important species in the wild. <br />
-                                    Ultimately, by protecting species, we save this beautiful, vulnerable and utterly irreplaceable planet we call home.
+                                <p className='head-title'>{t('volunteer_campaign')}</p>
+                                <h2>{t('join_team1')} <br />
+                                    {t('join_team2')}</h2>
+                                <p className='infor'>{t('join_des_1')}
+                                    <br />{t('join_des_2')} <br />
+                                    {t('join_des_3')}
                                 </p>
                                 <Link to='/contact' className='button button-left'>
-                                    Join with us
+                                    {t('join_us')}
                                 </Link>
                             </div>
                         </Col>

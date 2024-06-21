@@ -105,36 +105,7 @@ function HomePage(props: Props) {
       // nextArrow: <FontAwesomeIcon icon={faAngleRight} />,
    };
 
-   // var settings2 = {
-   //    dots: true,
-   //    infinite: true,
-   //    slidesToShow: 3,
-   //    slidesToScroll: 1,
-   //    autoplay: true,
-   //    speed: 2500,
-   //    autoplaySpeed: 2000,
-   //    cssEase: "linear",
-   //    responsive: [
-   //       {
-   //          breakpoint: 992,
-   //          settings: {
-   //             slidesToShow: 2,
-   //             slidesToScroll: 1,
-   //             initialSlide: 1
-   //          }
-   //       },
-   //       {
-   //          breakpoint: 768,
-   //          settings: {
-   //             slidesToShow: 1,
-   //             slidesToScroll: 1,
-   //          }
-   //       },
-   //    ],
-   // };
-
    // Animation on Scroll
-
    useEffect(() => {
       AOS.init({
          duration: 1000,
@@ -232,10 +203,10 @@ function HomePage(props: Props) {
                      </Offcanvas.Header>
                      <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1">
-                           <Nav.Link href="#home" className='active'>{t('home')}</Nav.Link>
+                           <Nav.Link as={NavLink} to="/home">{t('home')}</Nav.Link>
                            <Nav.Link as={NavLink} to="/about-us">{t('about_us')}</Nav.Link>
                            <Nav.Link as={NavLink} to="/reality">{t('reality')}</Nav.Link>
-                           <Nav.Link as={NavLink} to="/contact">{t('contact')}</Nav.Link>
+                           <Nav.Link as={NavLink} to="/gallery">{t('gallery')}</Nav.Link>
                            <Nav.Link as={NavLink} to="/donate">
                               <button className='button button-left'>{t('donate')}</button>
                            </Nav.Link>
@@ -608,8 +579,8 @@ function HomePage(props: Props) {
                   </div>
                   <div className="col-xl-5 col-12 mx-auto">
                      <form action="#" className="contact-form custom-form">
-                        <p style={{ color: "#315740" }}>Our contact</p>
-                        <h2>Get in touch</h2>
+                        <p style={{ color: "#315740" }}>{t('our_contact')}</p>
+                        <h2>{t('getin')}</h2>
                         <div className="row">
                            <div className="col-lg-6 col-md-6 col-12">
                               <input
@@ -617,7 +588,7 @@ function HomePage(props: Props) {
                                  className="form-control"
                                  name="first-name"
                                  id="first-name"
-                                 placeholder="First Name"
+                                 placeholder={t('fname')}
                                  required={true}
                               />
                            </div>
@@ -627,7 +598,7 @@ function HomePage(props: Props) {
                                  className="form-control"
                                  name="last-name"
                                  id="last-name"
-                                 placeholder="Last Name"
+                                 placeholder={t('lname')}
                                  required={true}
                               />
                            </div>
@@ -645,10 +616,10 @@ function HomePage(props: Props) {
                            id="message"
                            className="form-control"
                            rows={5}
-                           placeholder="What can we help you?"
+                           placeholder={t('help')}
                            defaultValue={""}
                         />
-                        <button type='submit' className="button button-left">Send Message</button>
+                        <button type='submit' className="button button-left">{t('mess')}</button>
                      </form>
                   </div>
                </Row>

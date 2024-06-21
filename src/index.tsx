@@ -5,9 +5,9 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import './index.css';
 import HomePage from './homepage';
 import About from './about';
-import Contact from './contact';
 import Donation from './donation';
 import Reality from './reality';
+import Gallery from './gallery';
 import Donate from './donate'
 import Donate2 from './donate2';
 import Donate3 from './donate3'
@@ -42,7 +42,7 @@ root.render(
         <Route path="/home" element={<HomePage />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/reality" element={<Reality />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/donate" element={<Donation />} />
         <Route path="/payment/project1" element={<Donate />} />
         <Route path="/payment/project2" element={<Donate2 />} />
