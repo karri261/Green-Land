@@ -44,7 +44,7 @@ ul {
     margin-left: 0;
     text-align: left;
     color: #fff;
-    font-size: 70px;
+    font-size: 65px;
     font-weight: 800;
 }
 
@@ -349,7 +349,7 @@ ul {
     margin-top: 30px;
 }
 
-#team .team-member .leader-infor .image {
+/* #team .team-member .leader-infor .image {
     aspect-ratio: 8 / 9;
 }
 
@@ -470,7 +470,8 @@ ul {
     left: 500%;
     transition: all 0.5s ease-in;
     transition-delay: 0.2s;
-}
+} */
+
 
 /* End team */
 /* Join */

@@ -167,7 +167,7 @@ ul {
     text-shadow: 4px 4px 8px rgba(2, 0, 0, 2);
     font-size: 95px;
     font-weight: 700;
-    line-height: 100px;
+    line-height: 110px;
     cursor: default;
 }
 
@@ -594,6 +594,7 @@ ul {
     left: -17px;
 }
 #work .title h2 {
+    margin-top: 10px;
     font-size: 40px;
     font-weight: 800;
 }
@@ -783,7 +784,7 @@ ul {
 }
 
 #latest-new .inner-box .title {
-    padding-top: 30px;
+    padding-top: 17px;
     cursor: pointer;
 }
 
@@ -883,15 +884,16 @@ ul {
 /* End feedback */
 /* Section subscribe */
 #subscribe {
+    margin-top: 30px;
     padding-top: 60px;
     padding-bottom: 60px;
+    background-image: url("assets/image/section_5_bg.jpg");
+    background-position: bottom;
+    position: relative;
 }
 
 #subscribe .inner-main {
     padding: 40px;
-    background-image: url("assets/image/section_5_bg.jpg");
-    background-position: bottom;
-    position: relative;
 }
 
 #subscribe .inner-main::before {
@@ -920,17 +922,96 @@ ul {
     font-size: 20px;
 }
 
-#subscribe .button {
-    text-align: center;
-    margin-top: 20px;
+/* End section subscribe */
+/* Contact */
+.contact-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-#subscribe button a {
+.contact-main {
+    padding-top: 40px;
+}
+
+.contact-main {
+    background-image: url('assets/image/contact-img.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 90%;
+    float: right;
+    height: 110%;
+    margin-bottom: 0;
+    position: relative;
+}
+.contact-main .address {
+    position: absolute;
+    color: #fff;
+    bottom: 5px;
+    left: 10px;
+    font-size: 15px;
+}
+.contact-main .address span,
+.contact-main .phone span{
+    margin-left: 5px;
+}
+
+.contact-main .phone  {
+    position: absolute;
+    color: #fff;
+    bottom: 5px;
+    right: 10px;
+    font-size: 15px;
+}
+
+/* --------------------------- */
+.contact-section .contact-form p {
+    font-size: 20px;
+    font-weight: bold
+}
+.contact-section .contact-form h2 {
+    font-size: 50px;
+    font-weight: bold
+}
+.contact-section .contact-form a {
     text-decoration: none;
     color: #fff;
 }
 
-/* End section subscribe */
+.contact-section .contact-form a:hover {
+    transition: all 0.3s;
+}
+
+.contact-section .contact-info .contact-info-btn {
+    background: var(--dark-green);
+    border: 2px solid transparent;
+    border-radius: 100px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 25px;
+}
+
+.contact-section .contact-form {
+    /* background: var(--dark-green); */
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.custom-form .form-control {
+    border: 1px solid #eee;
+    margin-bottom: 24px;
+    padding: 13px;
+}
+
+.custom-form .col-lg-6 {
+    margin-top: 15px;
+}
+.contact-section .button {
+    margin-top: 15px;
+    width: 100%;
+}
+/* End contact */
 /* Section footer */
 #footer {
     background-image: url(assets/image/body_bg.jpg);
@@ -996,7 +1077,6 @@ ul {
     text-decoration: none;
     color: #fff;
 }
-
 /* End section footer */
 /* Responsive */
 @media screen and (max-width: 992px) {

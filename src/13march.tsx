@@ -1,41 +1,36 @@
-import { useState, useEffect, SetStateAction } from 'react';
-import { NavLink, useNavigate, Link } from 'react-router-dom';
-import './donate.css';
+import { useState, useEffect } from 'react'
+import { Link, NavLink } from 'react-router-dom';
+import './13march.css'
 
-import axios from 'axios';
+import { Container, Row, Col, Breadcrumb } from 'react-bootstrap'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import Offcanvas from 'react-bootstrap/Offcanvas'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse, faUser, faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import logo from './assets/image/logo.png'
 
-import { Container, Row, Col, } from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import Alert from 'react-bootstrap/Alert';
-
-import project_1 from './assets/image/project_1.jpg'
-import project_2 from './assets/image/project_2.jpg'
-import project_3 from './assets/image/project_3.jpg'
-import vnpay from './assets/image/vnpay.png'
-import logo from './assets/image/logo.png';
 import footer_head from './assets/image/footer_head.png'
 
 import flagEn from './assets/image/en.svg';
 import flagVi from './assets/image/vi.svg';
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 
 import { useTranslation } from 'react-i18next';
 import i18n from './i18n';
 
 interface Props { }
 
-function Donate2(props: Props) {
-    const { } = props;
+function March13(props: Props) {
+    const { } = props
 
     const [isScrolledPast, setIsScrolledPast] = useState(false);
-    const navigate = useNavigate();
 
     // Effect for header
     useEffect(() => {
@@ -50,43 +45,6 @@ function Donate2(props: Props) {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-    // Donate Method
-    const [donateMethod, setDonateMethod] = useState('');
-
-    const handleDonateMethodChange = (method: SetStateAction<string>) => {
-        setDonateMethod(method);
-    };
-
-    useEffect(() => {
-        setDonateMethod('online');
-    }, []);
-
-    // Donate
-    const [amount, setAmount] = useState<number>(0);
-    const [locale, setLocale] = useState<string>('en');
-
-    const handleDonate = async () => {
-        try {
-            const response = await axios.post('http://localhost:5000/api/payment/create_payment_url', {
-                amount,
-                locale
-            });
-            window.location.href = response.data.redirectUrl;
-        } catch (error) {
-            console.error('Payment error:', error);
-        }
-    };
-
-    const [showAlert, setShowAlert] = useState(false);
-
-    const handleDonateNow = () => {
-        setShowAlert(true);
-        setTimeout(() => {
-            setShowAlert(false); // Tắt alert sau 3 giây
-            navigate('/donate'); // Chuyển hướng sau 3 giây
-        }, 2000);
-    };
 
     // Change language
     const [language, setLanguage] = useState<string>(localStorage.getItem('language') || 'en');
@@ -103,8 +61,8 @@ function Donate2(props: Props) {
         localStorage.setItem('language', newLanguage);
         localStorage.setItem('flag', newLanguage === 'en' ? flagEn : flagVi);
     };
-    const { t } = useTranslation();
 
+    const { t } = useTranslation();
 
     return (
         <>
@@ -147,135 +105,81 @@ function Donate2(props: Props) {
                 </Navbar>
             ))}
             {/* End Header*/}
-            {/* Hero section */}
-            <div id="hero">
+            {/* Main */}
+            <div id="content">
+                <div className="head">
+                    <div className="header">TRAINING ON FOREST AND WILDLIFE PROTECTION</div>
+                    <Breadcrumb>
+                        <Breadcrumb.Item>
+                            <Link to="/home">
+                                <FontAwesomeIcon icon={faHouse} />
+                            </Link>
+                        </Breadcrumb.Item>
+                        <Breadcrumb.Item active>Training on Forest and Wildlife Protection</Breadcrumb.Item>
+                    </Breadcrumb>
+                </div>
                 <Container>
-                    <h1>{t('make_donation')}</h1>
-                </Container>
-            </div>
-            {/* End hero section */}
-            {/* Donate */}
-            <div id="main">
-                <Container>
-                    <Row>
-                        <Col xl={3} className='image'>
-                            <img src={project_3} alt="" />
-                        </Col>
-                        <Col xl={4} className='content'>
-                            <h6>{t('donatingto')}:</h6>
-                            <h4>EcoProtect Alliance</h4>
-                            <p>{t('pr3_des')}!</p>
-                            <ul className='socials-list'>
-                                <li>
+                    <div className="top">
+                        <FontAwesomeIcon icon={faUser} />
+                        Admin -
+                        <FontAwesomeIcon icon={faClock} />
+                        13 March - Lastest new
+                    </div>
+                    <div className="inner_main_content">
+                        <img src={"https://www.nature.org.vn/en/wp-content/uploads/2023/07/1304_taphuantruyenthong-700x350-1.jpeg"} alt="" />
+                        <p>The local communities, those who live near the forest and depend on it for their livelihood, play a vital role in protecting the forest and its resources, including wildlife. However, in many cases, these locals are directly involved in deforestation and hunting wildlife due to the pressing needs for sustenance and income. This dual role as both protectors and exploiters highlights a critical area for intervention. </p>
+                        <p>
+                            Raising awareness to change behaviors that harm forests and wildlife is extremely important. But more importantly, equipping these locals so that they can directly communicate and bring change to their communities is crucial for sustainable conservation efforts. Empowering the local population with knowledge and skills allows them to become ambassadors for the forest, leading to more effective and culturally relevant conservation strategies. </p>
+                        <p>
+                            With this view, PanNature organized a training course on Forest and Wildlife Protection Communication with the aim of equipping the community with basic skills to carry out communication activities about forest and wildlife protection while also supporting the community to practice for future application. The training course was held from March 1 at the Cultural House of Hua Tat commune, Van Ho, Son La.</p>
+                        <p>
+                            The three-day training course brought together community members from various backgrounds, all united by a common goal: to learn and implement effective communication strategies that promote the preservation of their natural surroundings. The program included workshops on environmental education, sessions on developing and delivering compelling messages, and practical exercises that allowed participants to hone their newfound skills.</p>
+                        <p>
+                            Participants learned about the importance of biodiversity, the roles forests play in climate regulation, and the impacts of wildlife on ecosystem health. They were also trained in using various communication tools, from traditional storytelling and folk media to modern social media platforms, to reach diverse audiences within their communities.</p>
+                        <p>
+                            To ensure the effectiveness of the training, PanNature invited experts in environmental communication, local leaders, and conservationists who shared their experiences and insights. The interactive nature of the training encouraged participants to share their own stories and challenges, fostering a sense of community and collective responsibility.</p>
+                        <p>
+                            One of the key outcomes of the training was the development of localized communication plans tailored to the specific needs and contexts of the participants' communities. These plans included strategies for raising awareness about illegal logging, promoting sustainable agricultural practices, and advocating for the protection of endangered species</p>
+                        <img src={"https://www.nature.org.vn/en/wp-content/uploads/2023/07/1304_taphuantruyenthong1-1.jpeg"} alt="" />
+                        <img src={"https://www.nature.org.vn/en/wp-content/uploads/2023/07/1304_taphuantruyenthong3-2.jpeg"} alt="" />
+                        <span>Communities practice using social networking platforms on mobile phones</span>
+                        <img src={"https://www.nature.org.vn/en/wp-content/uploads/2023/07/1304_taphuantruyenthong4-1.jpeg"} alt="" />
+                        <span>Community in warm-up activities</span>
+                        <img src={"https://www.nature.org.vn/en/wp-content/uploads/2023/07/1304_taphuantruyenthong6-1.jpeg"} alt="" />
+                        <span>Paticipants practice video recording and taking photos</span>
+                        <p className='share'>SHARING IS CARING</p>
+                        <ul className='socials-list'>
+                            <li>
+                                <a href="https://www.facebook.com/" target='_blank'>
                                     <FontAwesomeIcon className='icon' icon={faFacebookF} />
-                                </li>
-                                <li>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/">
                                     <FontAwesomeIcon className='icon' icon={faInstagram} />
-                                </li>
-                                <li>
-                                    <FontAwesomeIcon className='icon' icon={faLinkedin} />
-                                </li>
-                                <li>
-                                    <FontAwesomeIcon className='icon' icon={faTwitter} />
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col xl={5}>
-                            <div className="donate-box">
-                                <div>
-                                    <label>{t('donation_amount')}: </label>
-                                    <br />
-                                    <input
-                                        className='amount'
-                                        type="number"
-                                        placeholder='Amount (VND)'
-                                        value={amount}
-                                        onChange={(e) => setAmount(parseInt(e.target.value))} />
-                                </div>
-                                <Row>
-                                    <Col md={6}>
-                                        <div className="form-check form-check-radio">
-                                            <input
-                                                type="radio"
-                                                name='donate-method'
-                                                className="form-check-input"
-                                                required={true}
-                                                checked={donateMethod === 'online'}
-                                                onChange={() => handleDonateMethodChange('online')} />
-                                            <label
-                                                className="form-check-label"
-                                                htmlFor="online"
-                                            >
-                                                {t('online')}
-                                            </label>
-                                        </div>
-                                    </Col>
-                                    <Col md={6}>
-                                        <div className="form-check form-check-radio">
-                                            <input
-                                                type="radio"
-                                                name='donate-method'
-                                                className="form-check-input"
-                                                required={true}
-                                                onChange={() => handleDonateMethodChange('offline')} />
-                                            <label
-                                                className="form-check-label"
-                                                htmlFor="offline"
-                                            >
-                                                {t('offline')}
-                                            </label>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                {donateMethod === 'offline' && (
-                                    <div className="offline-content">
-                                        <div className='title'>{t('method')}</div>
-                                        <div className='main-content'>
-                                        {t('donate_des')}
-                                        </div>
-                                        <br />
-                                        <button className='button button-left' onClick={handleDonateNow}>{t('donate_now')}</button>
-                                    </div>
-                                )}
-                                {donateMethod === 'online' && (
-                                    <div className="online-content">
-                                        <div className='title'>{t('method')}</div>
-                                        <img src={vnpay} alt="" />
-                                        <br />
-                                        <button className='button button-left' onClick={handleDonate}>{t('donate_now')}</button>
-                                    </div>
-                                )}
-                                {showAlert && (
-                                    <Alert className="alert-position" variant="success" onClose={() => setShowAlert(false)} dismissible>
-                                        Donation successful! Thank you for your contribution.
-                                    </Alert>
-                                )}
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-            {/* Project's description */}
-            <div id="des">
-                <Container>
-                    <Row>
-                        <Col xl={7} className='descript'>
-                            <h3>{t('introduce')} THE ECOPROTECT ALLIANCE</h3>
-                            <p>{t('pr3_1')}</p>
-                            <p>{t('pr3_2')}</p>
-                            <p>{t('pr3_3')}</p>
-                            <hr />
-                        </Col>
-                        <Col md={7} >
-                            <h4>{t('promise')}</h4>
-                            <p className='promise'>{t('promise_des')}</p>
-                        </Col>
-                    </Row>
+                                </a>
 
-                </Container>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/">
+                                    <FontAwesomeIcon className='icon' icon={faLinkedin} />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/?lang=vi">
+                                    <FontAwesomeIcon className='icon' icon={faTwitter} />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/intl/vi/gmail/about/">
+                                    <FontAwesomeIcon className='icon' icon={faEnvelope} />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </Container >
             </div >
-            {/* End project's description */}
-            {/* End section Donate */}
+            {/* End main */}
             {/* Footer */}
             <div id="footer">
                 <div className='footer-head'>
@@ -359,4 +263,5 @@ function Donate2(props: Props) {
     );
 }
 
-export default Donate2;
+export default March13;
+

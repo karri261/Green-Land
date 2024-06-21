@@ -12,6 +12,9 @@ import Donate from './donate'
 import Donate2 from './donate2';
 import Donate3 from './donate3'
 import VnpayReturn from './VNpayReturn';
+import March13 from './13march'
+
+import './i18n';
 
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -45,6 +48,8 @@ root.render(
         <Route path="/payment/project2" element={<Donate2 />} />
         <Route path="/payment/project3" element={<Donate3 />} />
         <Route path="/vnpay_return" element={<VnpayReturn />} />
+
+        <Route path="/trainning" element={<March13 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

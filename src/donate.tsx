@@ -17,11 +17,15 @@ import Modal from 'react-bootstrap/Modal';
 import Alert from 'react-bootstrap/Alert';
 
 import project_1 from './assets/image/project_1.jpg'
-import project_2 from './assets/image/project_2.jpg'
-import project_3 from './assets/image/project_3.jpg'
 import vnpay from './assets/image/vnpay.png'
 import logo from './assets/image/logo.png';
 import footer_head from './assets/image/footer_head.png'
+
+import flagEn from './assets/image/en.svg';
+import flagVi from './assets/image/vi.svg';
+
+import { useTranslation } from 'react-i18next';
+import i18n from './i18n';
 
 interface Props { }
 
@@ -82,6 +86,24 @@ function Donate(props: Props) {
         }, 2000);
     };
 
+    // Change language
+    const [language, setLanguage] = useState<string>(localStorage.getItem('language') || 'en');
+    const [flag, setFlag] = useState<string>(localStorage.getItem('flag') || flagEn);
+
+    useEffect(() => {
+        i18n.changeLanguage(language);
+        setFlag(language === 'en' ? flagEn : flagVi);
+    }, [language]);
+
+    const changeLanguage = () => {
+        const newLanguage = language === 'en' ? 'vi' : 'en';
+        setLanguage(newLanguage);
+        localStorage.setItem('language', newLanguage);
+        localStorage.setItem('flag', newLanguage === 'en' ? flagEn : flagVi);
+    };
+    const { t } = useTranslation();
+
+
     return (
         <>
             {/* Header*/}
@@ -106,12 +128,15 @@ function Donate(props: Props) {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1">
-                                    <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/about-us" >About us</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/reality">Reality</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/home">{t('home')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/about-us">{t('about_us')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/reality">{t('reality')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/contact">{t('contact')}</Nav.Link>
                                     <Nav.Link as={NavLink} to="/donate">
-                                        <button className='button button-left'>Donate</button>
+                                        <button className='button button-left'>{t('donate')}</button>
+                                    </Nav.Link>
+                                    <Nav.Link onClick={changeLanguage} style={{ cursor: 'pointer' }}>
+                                        <img src={flag} alt="flag" width="40" height="30" /> {language.toUpperCase()}
                                     </Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
@@ -123,7 +148,7 @@ function Donate(props: Props) {
             {/* Hero section */}
             <div id="hero">
                 <Container>
-                    <h1>MAKE A DONATION</h1>
+                    <h1>{t('make_donation')}</h1>
                 </Container>
             </div>
             {/* End hero section */}
@@ -135,9 +160,9 @@ function Donate(props: Props) {
                             <img src={project_1} alt="" />
                         </Col>
                         <Col xl={4} className='content'>
-                            <h6>YOU ARE DONATING TO:</h6>
+                            <h6>{t('donatingto')}:</h6>
                             <h4>Nature's Keeper</h4>
-                            <p>Safeguarding our planet's biodiversity and ecosystems for future generations</p>
+                            <p>{t('pr1_des')}</p>
                             <ul className='socials-list'>
                                 <li>
                                     <FontAwesomeIcon className='icon' icon={faFacebookF} />
@@ -156,7 +181,7 @@ function Donate(props: Props) {
                         <Col xl={5}>
                             <div className="donate-box">
                                 <div>
-                                    <label>Enter Donation Amount: </label>
+                                    <label>{t('donation_amount')}: </label>
                                     <br />
                                     <input
                                         className='amount'
@@ -179,7 +204,7 @@ function Donate(props: Props) {
                                                 className="form-check-label"
                                                 htmlFor="online"
                                             >
-                                                Donate Online
+                                                {t('online')}
                                             </label>
                                         </div>
                                     </Col>
@@ -195,27 +220,25 @@ function Donate(props: Props) {
                                                 className="form-check-label"
                                                 htmlFor="offline"
                                             >
-                                                Donate Offline
+                                                {t('offline')}
                                             </label>
                                         </div>
                                     </Col>
                                 </Row>
                                 {donateMethod === 'offline' && (
                                     <div className="offline-content">
-                                        <div className='title'>PAYMENT METHOD</div>
-                                        <div className='main-content'>
-                                            * By clicking the donate button, your record will be stored in our database as pending transaction. After your payment verifed, we will send receipt to your email,
-                                        </div>
+                                        <div className='title'>{t('method')}</div>
+                                        <div className='main-content'>{t('donate_des')}</div>
                                         <br />
-                                        <button className='button button-left' onClick={handleDonateNow}>Donate now</button>
+                                        <button className='button button-left' onClick={handleDonateNow}>{t('donate_now')}</button>
                                     </div>
                                 )}
                                 {donateMethod === 'online' && (
                                     <div className="online-content">
-                                        <div className='title'>PAYMENT METHOD</div>
+                                        <div className='title'>{t('method')}</div>
                                         <img src={vnpay} alt="" />
                                         <br />
-                                        <button className='button button-left' onClick={handleDonate}>Donate now</button>
+                                        <button className='button button-left' onClick={handleDonate}>{t('donate_now')}</button>
                                     </div>
                                 )}
                                 {showAlert && (
@@ -233,27 +256,17 @@ function Donate(props: Props) {
                 <Container>
                     <Row>
                         <Col xl={7} className='descript'>
-                            <h3>INTRODUCING THE NATURE'S KEEPERS</h3>
-                            <p>
-                                In a world where environmental conservation is paramount, the Nature's Keeper Project stands as a beacon of hope and action. Our initiative is driven by a simple yet powerful mission: to safeguard our planet's natural treasures for generations to come.
-                                Through a combination of community engagement, scientific research, and innovative conservation practices, we strive to protect biodiversity hotspots, preserve fragile ecosystems, and promote sustainable living practices.
-                            </p>
-                            <p>
-                                At the heart of our project lies a deep reverence for nature and a commitment to nurturing a harmonious relationship between humanity and the Earth. By empowering individuals, communities, and organizations to become stewards of the environment, we believe in creating a future where both people and nature thrive in balance.
-                            </p>
-                            <p>
-                                Join us in our journey to become Nature's Keepers and ensure a brighter, greener tomorrow for all !
-                            </p>
+                            <h3>{t('introduce')} THE NATURE'S KEEPERS</h3>
+                            <p>{t('pr1_1')}</p>
+                            <p>{t('pr1_2')}</p>
+                            <p>{t('pr1_3')}</p>
                             <hr />
                         </Col>
                         <Col md={7} >
-                            <h4>Our Promise to You</h4>
-                            <p className='promise'>
-                                Without your loyal support, we couldn’t do the vital work we do. That’s why we promise to uphold the highest ethical standards. You can send through any feedback or grievances here.
-                            </p>
+                            <h4>{t('promise')}</h4>
+                            <p className='promise'>{t('promise_des')}</p>
                         </Col>
                     </Row>
-
                 </Container>
             </div >
             {/* End project's description */}
@@ -269,7 +282,7 @@ function Donate(props: Props) {
                             <Row>
                                 <Col lg={4} sm={12}>
                                     <h2>GREEN LAND</h2>
-                                    <p>Help Green Land come together to protect what’s ours. Together we can stop poaching and save the animals from extinction. Place the animals in safe hands.</p>
+                                    <p>{t('footer_des')}</p>
                                     <div className="contact-list">
                                         <a href="https://www.facebook.com/" target='_blank'>
                                             <FontAwesomeIcon className='icon' icon={faFacebookF} />
@@ -287,41 +300,40 @@ function Donate(props: Props) {
                                 </Col>
                                 <Col lg={2} xs={6}>
                                     <ul>
-                                        <li className='head'><b>Navigation</b></li>
+                                        <li className='head'><b>{t('nav')}</b></li>
                                         <li>
-                                            <Link to='/home'>Home</Link>
+                                            <Link to='/home'>{t('home')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/about-us'>About us</Link>
+                                            <Link to='/about-us'>{t('about_us')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/reality'>Reality</Link>
+                                            <Link to='/reality'>{t('reality')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/contact'>Contact</Link>
+                                            <Link to='/contact'>{t('contact')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/donate'>Donate</Link>
+                                            <Link to='/donate'>{t('donate')}</Link>
                                         </li>
                                     </ul>
                                 </Col>
                                 <Col lg={3} xs={6}>
                                     <ul>
-                                        <li className='head'><b>Contact</b></li>
-                                        <li>Phone: 0236 3667 111</li>
+                                        <li className='head'><b>{t('contact')}</b></li>
+                                        <li>{t('phone')}: 0236 3667 111</li>
                                         <li>Email: greenland@gmail.com</li>
-                                        <li>Address: <br />
-                                            470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang</li>
+                                        <li>{t('address')}</li>
                                     </ul>
                                 </Col>
                                 <Col lg={3} sm={12}>
                                     <ul>
                                         <li className='head'><b>Mailbox</b></li>
-                                        <li>Please enter your Email to receive our latest notifications!</li>
+                                        <li>{t('mail_box_des')}</li>
                                         <li className='email-input'>
                                             <form action="">
-                                                <input type="email" name="" id="" placeholder='Your email' />
-                                                <button>Send</button>
+                                                <input type="email" name="" id="" placeholder={t('your_email')} />
+                                                <button>{t('send')}</button>
                                             </form>
                                         </li>
                                     </ul>

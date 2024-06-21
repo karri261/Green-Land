@@ -1,0 +1,165 @@
+{
+    "variety": "SỰ ĐA DẠNG",
+    "is_the": "CHÍNH LÀ",
+    "spice": "GIA VỊ",
+    "of": "CỦA",
+    "life": "CUỘC SỐNG",
+    "keep": "GIỮ GÌN",
+    "and": "VÀ",
+    "prevent": "NGĂN CHẶN",
+    "extinction": "TUYỆT CHỦNG",
+
+    "home": "Trang chủ",
+    "about_us": "Giới thiệu",
+    "reality": "Thực trạng",
+    "contact": "Liên hệ",
+    "donate": "Ủng hộ",
+    "language": "Ngôn ngữ",
+
+    "welcome": "Chào mừng đến với GREEN LAND",
+    "help_us": "Hãy giúp chúng tôi bảo vệ động vật hoang dã trên khắp thế giới.",
+    "descript_1": "Chúng tôi là một tổ chức chuyên bảo vệ và bảo tồn đa dạng sinh học trên hành tinh của chúng ta. Sứ mệnh của chúng tôi là cứu các loài khỏi nguy cơ tuyệt chủng và bảo vệ môi trường sống tự nhiên của chúng. Chúng tôi cố gắng nâng cao nhận thức cộng đồng và thúc đẩy các biện pháp bảo tồn bền vững thông qua những nỗ lực không ngừng nghỉ của mình.",
+    "key_1": "Bảo vệ và khôi phục môi trường sống tự nhiên.",
+    "key_2": "Nghiên cứu và giám sát động vật hoang dã",
+    "key_3": "Giáo dục và nâng cao nhận thức cộng đồng",
+    "discover_more": "Khám phá thêm",
+
+    "impact": "THÀNH TỰU CỦA CHÚNG TÔI",
+    "exp": "NĂM KINH NGHIỆM",
+    "partner" : "ĐỐI TÁC",
+    "project": "DỰ ÁN BẢO VỆ" ,
+    "mem": "THÀNH VIÊN",
+
+    "recent_prj": "CÁC DỰ ÁN ĐANG DIỄN RA",
+    "nature_keepers": "Người giữ gìn thiên nhiên",
+    "forest_friend": "Người bạn của rừng xanh",
+    "eco_protect": "Liên minh bảo vệ hệ sinh thái",
+    "donate_now": "Quyên góp ngay",
+
+    "working_process": "QUÁ TRÌNH LÀM VIỆC CỦA CHÚNG TÔI",
+    "you_donate": "KHI BẠN QUYÊN GÓP CHO CÁC DỰ ÁN CỦA GREEN LAND",
+    "donating": "Quyên góp",
+    "d_des": "Bạn sẽ điền các thông tin cần thiết như tên, email và phương thức thanh toán",
+    "process": "Xử lý",
+    "p_des": "Hệ thống tiếp nhận và xử lý thông tin quyên góp của bạn. Nó cũng kiểm tra và xác minh các chi tiết thanh toán.",
+    "complete": "Hoàn thành",
+    "c_des": "Dự án đã cập nhật số tiền quyên góp vào ngân sách và bắt đầu sử dụng số tiền này cho các hoạt động bảo vệ động vật hoang dã theo kế hoạch.",
+
+    "latest_new": "TIN TỨC MỚI NHẤT",
+    "new_1": "ĐÀO TẠO VỀ CÔNG TÁC BẢO VỆ RỪNG VÀ CUỘC SỐNG HOANG DÃ",
+    "new_1_des": "Cộng đồng địa phương, những người sống gần...",
+    
+    "new_2": "HƠN 1,200 NGƯỜI DÂN CAM KẾT KHÔNG SỬ DỤNG CÁC SẢN PHẨM TỪ ĐỘNG VẬT HOANG DÃ",
+    "new_2_des": "Nhằm khuyến khích người dân vùng ...",
+    
+    "new_3": "TRẢ TỰ DO CHO 65 CON RÙA BIỂN",
+    "new_3_des": "Những con rùa này rất quan trọng vì chúng là loài đầu tiên...",
+    
+    "new_4": "TÊ TÊ ĐƯỢC ĐƯA TRẢ VỀ RỪNG HOANG DÃ",
+    "new_4_des": "Đây là con tê tê thứ hai được tìm thấy trong hai tháng qua....",
+    
+    "new_5": "BẢO VỆ SỰ SỐNG HOANG DÃ BẰNG CÁCH THÚC ĐẨY DU LỊCH SINH THÁI",
+    "new_5_des": "Khi nhận thức của chúng ta về các vấn đề môi trường tiếp tục tăng lên...",
+
+    "feedback": "PHẢN HỒI TỪ NGƯỜI THAM GIA",
+
+    "fb_1": "Tôi rất thích cách các bạn tổ chức các hoạt động bảo vệ rừng một cách chuyên nghiệp và có kế hoạch rõ ràng. Những buổi hội thảo, sự kiện cộng đồng rất hữu ích, giúp nâng cao nhận thức về môi trường cho mọi người.",
+    "fb_2": "Dự án đã cho tôi thấy sức mạnh của cộng đồng khi cùng chung tay bảo vệ môi trường. Những buổi trồng cây và dọn rừng theo nhóm không chỉ góp phần bảo vệ thiên nhiên mà còn tạo cơ hội kết nối với nhiều bạn bè mới.",
+    "fb_3": "Tôi rất ấn tượng với sự minh bạch trong việc sử dụng kinh phí của dự án. Mỗi khoản đóng góp đều được công khai chi tiết và báo cáo tiến độ dự án được cập nhật thường xuyên. Điều này giúp tôi hoàn toàn yên tâm và tin tưởng vào sự đóng góp của mình.",
+    "fb_4": "Việc tham gia các hoạt động bảo vệ rừng cùng dự án đã giúp tôi học hỏi được nhiều kiến ​​thức mới về sinh thái và bảo tồn. Đội ngũ dự án rất nhiệt tình và giàu kinh nghiệm, luôn sẵn sàng chia sẻ và hướng dẫn chúng tôi.",
+    "fb_5": "Các hoạt động của dự án không chỉ tập trung vào việc trồng rừng mà còn giáo dục cộng đồng về tầm quan trọng của việc bảo vệ môi trường. Tôi rất vui khi thấy các chương trình giáo dục môi trường cho trẻ em và thanh thiếu niên.",
+
+    "volunteer": "THAM GIA TÌNH NGUYỆN CÙNG CHÚNG TÔI",
+    "volunteer_des": "Nếu bạn chặt một cái cây, bạn sẽ giết chết một mạng sống. Nếu bạn cứu được một cái cây, bạn sẽ cứu được một mạng sống. Nếu bạn trồng một cái cây, bạn trồng một cuộc sống.",
+    "sub": "ĐĂNG KÝ NGAY",
+
+    "footer_des": "Hãy đồng hành cùng Green Land bảo vệ những gì là của chúng ta. Cùng nhau, chúng ta có thể ngăn chặn nạn săn trộm và cứu các loài động vật khỏi nguy cơ tuyệt chủng. Đặt các con vật vào vùng an toàn.",
+    "nav": "Điều hướng",
+    "phone": "Điện thoại",
+    "address": "Địa chỉ: 470 Trần Đại Nghĩa, Hoà Quý, Ngũ Hành Sơn, Đà Nẵng",
+    "mail_box_des": "Vui lòng nhập email của bạn để nhận những thông báo mới nhất!",
+    "your_email": "Nhập email",
+    "send": "Gửi",
+
+    "explore": "Khám phá câu chuyện của chúng tôi",
+    "a": "MỘT",
+    "new": "HÀNH TRÌNH",
+    "journey": "MỚI",
+    "in": "TRONG",
+    "wildlife": "TRẢI NGHIỆM",
+    "experience": "HOANG DÃ",
+    "let_explore": "Bắt đầu khám phá",
+
+    "get_to_know1": "CÙNG TÌM HIỂU",
+    "get_to_know2": "VỀ GREEN LAND",
+    "dedicated": "Dành riêng cho các hoạt động bảo vệ động vật hoang dã và nâng cao nhận thức về môi trường thông qua sự hợp tác của cộng đồng.",
+    "our_org": "Tổ chức của chúng tôi được thành lập vào năm 2014 với mục tiêu chính là bảo vệ động vật hoang dã và môi trường sống của chúng. Sứ mệnh của chúng tôi xuất phát từ một nhu cầu cấp thiết là bảo tồn sự đa dạng sinh học đang bị đe doạ bởi các hoạt động của con người. Sứ mệnh ấy không dừng lại ở việc bảo vệ động vật hoang dã và môi trường sống mà còn góp phần nâng cao ý thức bảo vệ môi trường của tất cả mọi người!",
+
+    "pr1_des" : "Bảo vệ đa dạng sinh học và hệ sinh thái của hành tinh chúng ta cho các thế hệ tương lai",
+    "pr2_des" : "Dành riêng cho việc bảo vệ và phục hồi rừng, đảm bảo một tương lai bền vững cho hành tinh của chúng ta và động vật hoang dã trên đó!",
+    "pr3_des" : "Đoàn kết cộng đồng để bảo tồn tài nguyên thiên nhiên, chống biến đổi khí hậu và thúc đẩy cuộc sống bền vững vì một hành tinh khỏe mạnh hơn!",
+    "donated" : "Hoàn thành",
+    "goal" : "Mục tiêu",
+    "follow": "Theo dõi",
+
+    "how" : "Tại sao điều này lại thu hút sự chú ý của chúng tôi",
+    "para_1" : "Nhận thức này được thúc đẩy bởi sự thừa nhận ngày càng tăng về mối quan hệ phức tạp giữa hành động của con người và sức sống của động vật hoang dã. Thông qua nghiên cứu khoa học, đánh giá sinh thái và quan sát sự thay đổi môi trường, chúng tôi nhận ra tác động sâu sắc của các hoạt động của chúng tôi đối với quần thể động vật hoang dã, môi trường sống và hệ sinh thái. Những lo ngại ngày càng tăng về tốc độ tuyệt chủng loài ngày càng tăng, mất môi trường sống và suy thoái hệ sinh thái đã đẩy việc bảo tồn động vật hoang dã lên hàng đầu được toàn cầu chú ý. Các tổ chức bảo tồn, nhà nghiên cứu và cá nhân đã nhiệt tình ủng hộ việc bảo vệ và bảo tồn động vật hoang dã đa dạng trên hành tinh của chúng ta.",
+    "para_2" : "Hơn nữa, khi các xã hội nắm bắt được giá trị nội tại của đa dạng sinh học và các dịch vụ hệ sinh thái thiết yếu do động vật hoang dã mang lại, nỗ lực lồng ghép bảo tồn động vật hoang dã vào các chính sách, giáo dục và hoạt động hàng ngày đã tăng lên. Cuối cùng, việc thừa nhận vai trò then chốt của bảo tồn động vật hoang dã trong việc duy trì trạng thái cân bằng sinh thái và hỗ trợ hạnh phúc của con người đã tạo ra một cam kết tập thể nhằm giải quyết vấn đề quan trọng này.",
+    "slogan" : "Bảo tồn động vật hoang dã, bảo tồn môi trường sống và giáo dục đa dạng sinh học là những điều cần thiết cơ bản cho một hệ sinh thái thịnh vượng và một tương lai bền vững.",
+    "donate_phone": "Ủng hộ qua điện thoại",
+    "noproblem" : "Không thành vấn đề. Liên hệ ngay",
+    "oremail" : "Hoặc email qua",
+    "safe": "Ủng hộ trực tuyến an toàn",
+    "safe_des" : "Khoản thanh toán được mã hóa và truyền an toàn bằng giao thức SSL.",
+    "the_stories" : "CÂU CHUYỆN CỦA CHÚNG TÔI",
+    "how_des" : "Vấn đề này thu hút sự chú ý của chúng tôi thông qua tốc độ đáng báo động về sự tuyệt chủng của các loài, sự hủy hoại môi trường sống và nghiên cứu khoa học nêu bật tác động quan trọng của các hoạt động của con người đối với động vật hoang dã và hệ sinh thái.",
+    "how_explore": "Khám phá",
+
+    "quest_1" : "Bảo tồn động vật hoang dã là gì",
+    "ans_1" : "Bảo tồn động vật hoang dã liên quan đến việc bảo vệ các loài động vật và môi trường sống của chúng để đảm bảo sự tồn tại và đa dạng sinh học của chúng.",
+
+    "quest_2" : "Việc bảo tồn động vật hoang dã trở nên quan trọng như thế nào",
+    "ans_2" : "Tầm quan trọng của việc bảo tồn động vật hoang dã nổi lên khi quá trình công nghiệp hóa và mở rộng đô thị dẫn đến hủy hoại môi trường sống và suy giảm các loài, nâng cao nhận thức về sự cần thiết phải bảo vệ di sản thiên nhiên của chúng ta.",
+
+    "quest_3" : "Làm thế nào để bạn đảm bảo số tiền quyên góp của tôi cho việc bảo tồn động vật hoang dã được sử dụng một cách hiệu quả",
+    "ans_3" : "Chúng tôi có các quy trình giám sát và đánh giá nghiêm ngặt để đảm bảo rằng các khoản quyên góp hỗ trợ trực tiếp cho các dự án bảo tồn, nghiên cứu và nỗ lực gắn kết cộng đồng.",
+
+    "quest_4" : "Làm thế nào để bạn xác định loài nào cần giúp đỡ",
+    "ans_4" : "Chúng tôi hợp tác với các nhà khoa học và nhà nghiên cứu tiến hành nghiên cứu và đánh giá thực địa để xác định các loài có nguy cơ tuyệt chủng và ưu tiên chúng cho các nỗ lực bảo tồn.",
+
+    "quest_5" : "Khoản quyên góp của tôi cho hoạt động bảo tồn động vật hoang dã có được khấu trừ thuế không",
+    "ans_5" : "Có, các khoản quyên góp thường được khấu trừ thuế",
+
+    "quest_6" : "Khoản quyên góp của tôi thực sự đi đâu",
+    "ans_6" : "Các khoản quyên góp được phân bổ cho các dự án bảo tồn thực địa, các sáng kiến ​​nghiên cứu, phục hồi môi trường sống và các chương trình giáo dục cộng đồng để tối đa hóa tác động của chúng.",
+
+    "quest_7" : "Làm thế nào để bạn chọn địa điểm cho các dự án bảo tồn",
+    "ans_7" : "Chúng tôi chọn các địa điểm dựa trên nghiên cứu khoa học, các điểm nóng đa dạng sinh học và các khu vực có xung đột giữa con người và động vật hoang dã cao, đảm bảo nỗ lực của chúng tôi tạo ra tác động đáng kể.",
+
+    "quest_8" : "Bao nhiêu phần trăm số tiền quyên góp của tôi dành cho các chương trình bảo tồn",
+    "ans_8" : "Một tỷ lệ đáng kể số tiền quyên góp của bạn sẽ được chuyển trực tiếp đến các chương trình bảo tồn, với chi phí đầu tư tối thiểu, đảm bảo lợi ích tối đa cho động vật hoang dã.",
+
+    "make_donation" : "ỦNG HỘ NGAY CHO DỰ ÁN",
+    "donatingto" : "BẠN ĐANG ỦNG HỘ CHO",
+    "donation_amount" : "Nhập số tiền ủng hộ",
+    "online" : "Ủng hộ Online",
+    "offline" : "Ủng hộ Offline",
+    "method" : "Phương thức thanh toán",
+    "donate_des" : "* Bằng cách nhấp vào nút quyên góp, hồ sơ của bạn sẽ được lưu trữ trong cơ sở dữ liệu của chúng tôi dưới dạng giao dịch đang chờ xử lý. ",
+    "introduce" : "GIỚI THIỆU",
+    "pr1_1" : "Trong một thế giới mà việc bảo tồn môi trường là điều tối quan trọng, Dự án 'Nature's Keepers' là ngọn hải đăng của hy vọng và hành động. Sáng kiến ​​của chúng tôi được thúc đẩy bởi một sứ mệnh đơn giản nhưng mạnh mẽ: bảo vệ kho báu thiên nhiên của hành tinh chúng ta cho các thế hệ mai sau. Thông qua sự kết hợp giữa sự tham gia của cộng đồng, nghiên cứu khoa học và các biện pháp bảo tồn sáng tạo, chúng tôi cố gắng bảo vệ các điểm nóng đa dạng sinh học, bảo tồn các hệ sinh thái mỏng manh và thúc đẩy các hoạt động sống bền vững.",
+    "pr1_2" : "Trọng tâm dự án của chúng tôi là sự tôn kính sâu sắc đối với thiên nhiên và cam kết nuôi dưỡng mối quan hệ hài hòa giữa nhân loại và Trái đất. Bằng cách trao quyền cho các cá nhân, cộng đồng và tổ chức để trở thành người quản lý môi trường, chúng tôi tin vào việc tạo ra một tương lai nơi cả con người và thiên nhiên đều phát triển cân bằng.",
+    "pr1_3" : "Hãy tham gia cùng chúng tôi trong hành trình trở thành một Nature's Keepers và đảm bảo một ngày mai tươi sáng hơn, xanh hơn cho tất cả mọi người!",
+
+    "pr2_1" : "Sứ mệnh của chúng tôi rất đơn giản nhưng sâu sắc: trở thành người bạn tốt nhất mà rừng có được bằng cách đảm bảo sức khỏe, đa dạng sinh học và khả năng phục hồi của rừng cho các thế hệ tương lai. Dự án của chúng tôi tập trung vào cách tiếp cận toàn diện để bảo tồn rừng. Chúng tôi làm việc không mệt mỏi để khôi phục những khu rừng bị suy thoái, bảo vệ những khu rừng hiện có và thúc đẩy các hoạt động bền vững có lợi cho cả môi trường và cộng đồng địa phương. Thông qua các nỗ lực trồng lại rừng, bảo tồn môi trường sống và giáo dục, chúng tôi mong muốn chống lại nạn phá rừng và thúc đẩy mối liên hệ sâu sắc giữa con người và thiên nhiên.", 
+    "pr2_2" : "Cốt lõi của Dự án Forest's Friends là niềm tin vào sức mạnh của hành động tập thể. Chúng tôi hợp tác với các nhà bảo vệ môi trường, nhà khoa học, tình nguyện viên và cộng đồng bản địa để tạo ra một mạng lưới những người bạn tận tâm vì rừng. Cùng nhau, chúng ta đấu tranh vì lá phổi của hành tinh chúng ta, đảm bảo chúng tiếp tục cung cấp không khí sạch, đa dạng sinh học phong phú và vẻ đẹp tự nhiên.",
+    "pr2_3" : "Hãy tham gia cùng chúng tôi trong Forest's Friends và trở thành người bảo vệ màu xanh lá cây. Cùng nhau, chúng ta có thể nuôi dưỡng những khu rừng nuôi dưỡng tất cả chúng ta!",
+
+    "pr3_1" : "Sứ mệnh của chúng tôi là đoàn kết các cá nhân, cộng đồng và tổ chức trong cuộc chiến chống suy thoái môi trường, thúc đẩy các hoạt động bền vững và bảo vệ hệ sinh thái quý giá của hành tinh chúng ta. EcoProtect Alliance hoạt động trên nguyên tắc hợp tác và chia sẻ trách nhiệm. Chúng tôi tin rằng bằng cách hợp tác cùng nhau, chúng ta có thể giải quyết những thách thức môi trường cấp bách nhất trong thời đại chúng ta, từ biến đổi khí hậu và ô nhiễm đến hủy hoại môi trường sống và mất đa dạng sinh học. Các dự án của chúng tôi trải rộng trên nhiều hoạt động, bao gồm các nỗ lực bảo tồn, chương trình phát triển bền vững và các chiến dịch giáo dục môi trường.",
+    "pr3_2" : "Trọng tâm sứ mệnh của chúng tôi là trao quyền cho cộng đồng địa phương. Chúng tôi hợp tác chặt chẽ với các tổ chức cơ sở, người dân bản địa và các nhà hoạt động môi trường để tạo ra các giải pháp vừa hiệu quả vừa toàn diện. Bằng cách thúc đẩy mạng lưới các chiến binh sinh thái toàn cầu, chúng tôi mong muốn truyền cảm hứng cho hành động tập thể và thúc đẩy sự thay đổi có ý nghĩa.", 
+    "pr3_3" : "Tham gia EcoProtect Alliance và trở thành một phần của phong trào nhằm bảo tồn hành tinh của chúng ta cho các thế hệ tương lai. Cùng nhau, chúng ta có thể tạo ra một tương lai bền vững, nơi thiên nhiên và nhân loại phát triển hài hòa!",
+
+    "promise" : "Mong ước của chúng tôi với bạn",
+    "promise_des" : "Nếu không có sự hỗ trợ trung thành của bạn, chúng tôi không thể thực hiện được công việc quan trọng mà chúng tôi đang làm. Đó là lý do tại sao chúng tôi hứa sẽ duy trì các tiêu chuẩn đạo đức cao nhất."
+
+}

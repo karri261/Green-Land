@@ -72,7 +72,7 @@ function Contact(props: Props) {
             ))}
             {/* End Header*/}
             {/* Main */}
-            <div className="contact-section">
+            {/* <div className="contact-section">
                 <Container>
                     <Row>
                         <div className="col-xl-5 col-12 ms-auto mb-5 ">
@@ -136,7 +136,7 @@ function Contact(props: Props) {
                         </div>
                     </Row>
                 </Container>
-            </div>
+            </div> */}
             {/* End main */}
             {/* Footer */}
             <div id="footer">

@@ -18,11 +18,17 @@ import project_2 from './assets/image/project_2.jpg';
 import project_3 from './assets/image/project_3.jpg';
 import footer_head from './assets/image/footer_head.png';
 
+import flagEn from './assets/image/en.svg';
+import flagVi from './assets/image/vi.svg';
+
 import './donation.css';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+
+import { useTranslation } from 'react-i18next';
+import i18n from './i18n';
 
 const Donation: React.FC = () => {
     const [isScrolledPast, setIsScrolledPast] = useState(false);
@@ -51,6 +57,23 @@ const Donation: React.FC = () => {
         nextArrow: <FontAwesomeIcon icon={faAngleRight} />,
     };
 
+    // Change language
+    const [language, setLanguage] = useState<string>(localStorage.getItem('language') || 'en');
+    const [flag, setFlag] = useState<string>(localStorage.getItem('flag') || flagEn);
+
+    useEffect(() => {
+        i18n.changeLanguage(language);
+        setFlag(language === 'en' ? flagEn : flagVi);
+    }, [language]);
+
+    const changeLanguage = () => {
+        const newLanguage = language === 'en' ? 'vi' : 'en';
+        setLanguage(newLanguage);
+        localStorage.setItem('language', newLanguage);
+        localStorage.setItem('flag', newLanguage === 'en' ? flagEn : flagVi);
+    };
+    const { t } = useTranslation();
+
     return (
         <>
             {/* Header*/}
@@ -75,12 +98,15 @@ const Donation: React.FC = () => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1">
-                                    <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/about-us" >About us</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/reality">Reality</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/home">{t('home')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/about-us">{t('about_us')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/reality">{t('reality')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/contact">{t('contact')}</Nav.Link>
                                     <Nav.Link as={NavLink} to="/donate">
-                                        <button className='button button-left'>Donate</button>
+                                        <button className='button button-left'>{t('donate')}</button>
+                                    </Nav.Link>
+                                    <Nav.Link onClick={changeLanguage} style={{ cursor: 'pointer' }}>
+                                        <img src={flag} alt="flag" width="40" height="30" /> {language.toUpperCase()}
                                     </Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
@@ -102,12 +128,12 @@ const Donation: React.FC = () => {
                                     <h2>Nature's Keepers <br />
                                         Project
                                     </h2>
-                                    <p>Safeguarding our planet's biodiversity and ecosystems for future generations!</p>
+                                    <p>{t('pr1_des')}</p>
 
                                     <ProgressBar now={70} />
                                     <div className="status">
-                                        <div className='donated'>70% Donated</div>
-                                        <div className='goal'>Goal: 100,000,000 VND</div>
+                                        <div className='donated'>70% {t('donated')}</div>
+                                        <div className='goal'>{t('goal')}: 100,000,000 VND</div>
                                     </div>
                                     <hr />
                                     <ul className='socials-list'>
@@ -135,13 +161,13 @@ const Donation: React.FC = () => {
                                     </ul>
                                     <div className="button-group">
                                         <Nav.Link as={NavLink} to="/payment/project1">
-                                            <button className='button button-left'>Donate now </button>
+                                            <button className='button button-left'>{t('donate_now')}</button>
                                         </Nav.Link>
                                         <div className='follow'>
                                             <a href="https://www.facebook.com/" target='_blank'>
                                                 <button>
                                                     <FontAwesomeIcon icon={faHeart} />
-                                                    <span>Follow</span>
+                                                    <span>{t('follow')}</span>
                                                 </button>
                                             </a>
                                         </div>
@@ -158,12 +184,12 @@ const Donation: React.FC = () => {
                                     <h2>Forest's Friend <br />
                                         Project
                                     </h2>
-                                    <p>Dedicated to protecting and restoring forests, ensuring a sustainable future for our planet and its wildlife!</p>
+                                    <p>{t('pr2_des')}</p>
 
                                     <ProgressBar now={100} />
                                     <div className="status">
-                                        <div className='donated'>100% Donated</div>
-                                        <div className='goal'>Goal: 500,000,000 VND</div>
+                                        <div className='donated'>100% {t('donated')}</div>
+                                        <div className='goal'>{t('goal')}: 500,000,000 VND</div>
                                     </div>
                                     <hr />
                                     <ul className='socials-list'>
@@ -191,13 +217,13 @@ const Donation: React.FC = () => {
                                     </ul>
                                     <div className="button-group">
                                         <Nav.Link as={NavLink} to="/payment/project2">
-                                            <button className='button button-left'>Donate now </button>
+                                            <button className='button button-left'>{t('donate_now')}</button>
                                         </Nav.Link>
                                         <div className='follow'>
                                             <a href="https://www.facebook.com/" target='_blank'>
                                                 <button>
                                                     <FontAwesomeIcon icon={faHeart} />
-                                                    <span>Follow</span>
+                                                    <span>{t('follow')}</span>
                                                 </button>
                                             </a>
                                         </div>
@@ -214,12 +240,12 @@ const Donation: React.FC = () => {
                                     <h2>EcoProtect Alliance <br />
                                         Project
                                     </h2>
-                                    <p>Uniting communities to conserve natural resources, combat climate change, and promote sustainable living for a healthier planet!</p>
+                                    <p>{t('pr3_des')}</p>
 
                                     <ProgressBar now={40} />
                                     <div className="status">
-                                        <div className='donated'>40% Donated</div>
-                                        <div className='goal'>Goal: 100,000,000,000 VND</div>
+                                        <div className='donated'>40% {t('donated')}</div>
+                                        <div className='goal'>{t('goal')}: 100,000,000,000 VND</div>
                                     </div>
                                     <hr />
                                     <ul className='socials-list'>
@@ -247,13 +273,13 @@ const Donation: React.FC = () => {
                                     </ul>
                                     <div className="button-group">
                                         <Nav.Link as={NavLink} to="/payment/project3">
-                                            <button className='button button-left'>Donate now </button>
+                                            <button className='button button-left'>{t('donate_now')}</button>
                                         </Nav.Link>
                                         <div className='follow'>
                                             <a href="https://www.facebook.com/" target='_blank'>
                                                 <button>
                                                     <FontAwesomeIcon icon={faHeart} />
-                                                    <span>Follow</span>
+                                                    <span>{t('follow')}</span>
                                                 </button>
                                             </a>
                                         </div>
@@ -270,53 +296,42 @@ const Donation: React.FC = () => {
                 <Container>
                     <Row>
                         <Col lg={7}>
-                            <h4>How did this come to our attention?</h4>
-                            <p>
-                                This awareness has been driven by a growing acknowledgment of the intricate relationship between human actions and the vitality of wildlife. Through scientific research, ecological assessments, and observations of environmental shifts, we've come to realize the profound impact of our activities on wildlife populations, habitats, and ecosystems. Rising concerns over escalating rates of species extinction, habitat loss, and ecosystem degradation have propelled wildlife conservation to the forefront of global attention. Conservation organizations, researchers, and individuals have fervently advocated for the protection and preservation of our planet's diverse wildlife. </p>
-                            <p>
-                                Moreover, as societies grasp the intrinsic value of biodiversity and the essential ecosystem services provided by wildlife, there's been a surge in efforts to integrate wildlife conservation into policies, education, and daily practices. Ultimately, the recognition of wildlife conservation's pivotal role in sustaining ecological equilibrium and supporting human well-being has sparked a collective commitment to address this critical issue.
-                            </p>
+                            <h4>{t('how')}?</h4>
+                            <p>{t('para_1')}</p>
+                            <p>{t('para_2')}</p>
                             <div className='line'></div>
-                            <div className="slogan">
-                                Wildlife conservation, habitat preservation, and biodiversity education are fundamental necessities for a thriving ecosystem and a sustainable future.
-                            </div>
+                            <div className="slogan">{t('slogan')}</div>
                             <ul>
                                 <li>
                                     <FontAwesomeIcon className='icon' icon={faCircleCheck} />
-                                    <span>
-                                        Protect and Restore Natural Habitats
-                                    </span>
+                                    <span>{t('key_1')}</span>
                                 </li>
                                 <li>
                                     <FontAwesomeIcon className='icon' icon={faCircleCheck} />
-                                    <span>
-                                        Research and Monitor Wildlife
-                                    </span>
+                                    <span>{t('key_2')}</span>
                                 </li>
                                 <li>
                                     <FontAwesomeIcon className='icon' icon={faCircleCheck} />
-                                    <span>
-                                        Educate and Raise Public Awareness
-                                    </span>
+                                    <span>{t('key_3')}</span>
                                 </li>
                             </ul>
                         </Col>
                         <Col lg={5}>
                             <div className="box">
                                 <div className="content">
-                                    <p>Want to donate by phone?</p>
+                                    <p>{t('donate_phone')}?</p>
                                     <br />
-                                    <span>Not a problem. Call us now</span>
+                                    <span>{t('noproblem')}</span>
                                     <p>0236-3667-111</p>
                                     <br />
-                                    <span>Or email us:</span>
+                                    <span>{t('oremail')}:</span>
                                     <p>greenland@gmail.com</p>
                                 </div>
                             </div>
                             <div className="secure">
                                 <img src={http} alt="" />
-                                <p className='title'>Donate online safely</p>
-                                <p className='descript'>The payment is encrypted and transmitted securely with an SSL protocol.</p>
+                                <p className='title'>{t('safe')}</p>
+                                <p className='descript'>{t('safe_des')}</p>
                             </div>
                         </Col>
                     </Row>
@@ -325,11 +340,11 @@ const Donation: React.FC = () => {
                     <Container>
                         <Row>
                             <Col lg={6}>
-                                <p className='title-head'>THE STORIES OF US</p>
-                                <h2 className='title-main'>How did this come to our attention?</h2>
-                                <span>This issue came to our attention through alarming rates of species extinction, habitat destruction, and scientific research highlighting the crucial impact of human activities on wildlife and ecosystems. </span>
+                                <p className='title-head'>{t('the_stories')}</p>
+                                <h2 className='title-main'>{t('how')}</h2>
+                                <span>{t('how_des')}</span>
                                 <Nav.Link as={NavLink} to='/about-us'>
-                                    <button>Explore</button>
+                                    <button>{t('how_explore')}</button>
                                 </Nav.Link>
                             </Col>
                             <Col lg={6}>
@@ -354,62 +369,30 @@ const Donation: React.FC = () => {
                     <h3>FAQ</h3>
                     <Row>
                         <Col lg={6}>
-                            <p className='quest'>
-                                What is wildlife conservation?
-                            </p>
-                            <p className='ans'>
-                                - Wildlife conservation involves protecting animal species and their habitats to ensure their survival and biodiversity.
-                            </p>
+                            <p className='quest'>{t('quest_1')}</p>
+                            <p className='ans'>- {t('ans_1')}</p>
                             <hr />
-                            <p className='quest'>
-                                How did wildlife conservation become important?
-                            </p>
-                            <p className='ans'>
-                                - The significance of wildlife conservation emerged as industrialization and urban expansion led to habitat destruction and species decline, raising awareness about the need to protect our natural heritage.
-                            </p>
+                            <p className='quest'>{t('quest_2')}</p>
+                            <p className='ans'>- {t('ans_2')}</p>
                             <hr />
-                            <p className='quest'>
-                                How do you ensure my donations to wildlife conservation are used effectively?
-                            </p>
-                            <p className='ans'>
-                                - We have rigorous monitoring and evaluation processes to ensure that donations directly support conservation projects, research, and community engagement efforts.
-                            </p>
+                            <p className='quest'>{t('quest_3')}</p>
+                            <p className='ans'>- {t('ans_3')}</p>
                             <hr />
-                            <p className='quest'>
-                                How do you identify which species need help?
-                            </p>
-                            <p className='ans'>
-                                - We collaborate with scientists and researchers who conduct field studies and assessments to identify endangered species and prioritize them for conservation efforts.
-                            </p>
+                            <p className='quest'>{t('quest_4')}</p>
+                            <p className='ans'>- {t('ans_4')}</p>
                         </Col>
                         <Col lg={6}>
-                            <p className='quest'>
-                                Is my donation to wildlife conservation tax-deductible?
-                            </p>
-                            <p className='ans'>
-                                - Yes, donations are typically tax-deductible if you are in the U.S. and donate to a registered non-profit organization.
-                            </p>
+                            <p className='quest'>{t('quest_5')}</p>
+                            <p className='ans'>- {t('ans_5')}</p>
                             <hr />
-                            <p className='quest'>
-                                Where does my donation actually go?
-                            </p>
-                            <p className='ans'>
-                                - Donations are allocated to on-the-ground conservation projects, research initiatives, habitat restoration, and community education programs to maximize their impact.
-                            </p>
+                            <p className='quest'>{t('quest_6')}</p>
+                            <p className='ans'>- {t('ans_6')}</p>
                             <hr />
-                            <p className='quest'>
-                                How do you choose locations for conservation projects?
-                            </p>
-                            <p className='ans'>
-                                - We select locations based on scientific research, biodiversity hotspots, and areas where human-wildlife conflict is high, ensuring our efforts make a significant impact.
-                            </p>
+                            <p className='quest'>{t('quest_7')}</p>
+                            <p className='ans'>- {t('ans_7')}</p>
                             <hr />
-                            <p className='quest'>
-                                What percentage of my donation goes towards conservation programs?
-                            </p>
-                            <p className='ans'>
-                                - A substantial percentage of your donation goes directly to conservation programs, with minimal overhead costs, ensuring maximum benefit to wildlife.
-                            </p>
+                            <p className='quest'>- {t('quest_8')}</p>
+                            <p className='ans'>- {t('ans_8')}</p>
                         </Col>
                     </Row>
                 </Container>
@@ -426,7 +409,7 @@ const Donation: React.FC = () => {
                             <Row>
                                 <Col lg={4} sm={12}>
                                     <h2>GREEN LAND</h2>
-                                    <p>Help Green Land come together to protect what’s ours. Together we can stop poaching and save the animals from extinction. Place the animals in safe hands.</p>
+                                    <p>{t('footer_des')}</p>
                                     <div className="contact-list">
                                         <a href="https://www.facebook.com/" target='_blank'>
                                             <FontAwesomeIcon className='icon' icon={faFacebookF} />
@@ -444,41 +427,40 @@ const Donation: React.FC = () => {
                                 </Col>
                                 <Col lg={2} xs={6}>
                                     <ul>
-                                        <li className='head'><b>Navigation</b></li>
+                                        <li className='head'><b>{t('nav')}</b></li>
                                         <li>
-                                            <Link to='/home'>Home</Link>
+                                            <Link to='/home'>{t('home')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/about-us'>About us</Link>
+                                            <Link to='/about-us'>{t('about_us')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/reality'>Reality</Link>
+                                            <Link to='/reality'>{t('reality')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/contact'>Contact</Link>
+                                            <Link to='/contact'>{t('contact')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/donate'>Donate</Link>
+                                            <Link to='/donate'>{t('donate')}</Link>
                                         </li>
                                     </ul>
                                 </Col>
                                 <Col lg={3} xs={6}>
                                     <ul>
-                                        <li className='head'><b>Contact</b></li>
-                                        <li>Phone: 0236 3667 111</li>
+                                        <li className='head'><b>{t('contact')}</b></li>
+                                        <li>{t('phone')}: 0236 3667 111</li>
                                         <li>Email: greenland@gmail.com</li>
-                                        <li>Address: <br />
-                                            470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang</li>
+                                        <li>{t('address')}</li>
                                     </ul>
                                 </Col>
                                 <Col lg={3} sm={12}>
                                     <ul>
                                         <li className='head'><b>Mailbox</b></li>
-                                        <li>Please enter your Email to receive our latest notifications!</li>
+                                        <li>{t('mail_box_des')}</li>
                                         <li className='email-input'>
                                             <form action="">
-                                                <input type="email" name="" id="" placeholder='Your email' />
-                                                <button>Send</button>
+                                                <input type="email" name="" id="" placeholder={t('your_email')} />
+                                                <button>{t('send')}</button>
                                             </form>
                                         </li>
                                     </ul>

@@ -1,0 +1,168 @@
+{
+    "variety": "VARIETY",
+    "is_the": "IS THE",
+    "spice": "SPICE",
+    "of": "OF THE",
+    "life": "LIFE",
+    "keep": "KEEP",
+    "and": "AND",
+    "prevent": "PREVENT",
+    "extinction": "EXTINCTION",
+
+    "home": "Home",
+    "about_us": "About us",
+    "reality": "Reality",
+    "contact": "Contact",
+    "donate": "Donate",
+    "language": "Language",
+
+    "welcome": "Welcome to GREEN LAND",
+    "help_us": "Help us to protect wildlife around the world.",
+    "descript_1": "We are an organization dedicated to protecting and preserving the biodiversity of our planet. Our mission is to save species from extinction and safeguard their natural habitats. We strive to raise public awareness and promote sustainable conservation measures through our relentless efforts.",
+    "key_1": "Protect and Restore Natural Habitats",
+    "key_2": "Research and Monitor Wildlife",
+    "key_3": "Educate and Raise Public Awareness",
+    "discover_more": "Discover more",
+
+    "impact": "OUR IMPACT",
+    "exp": "YEAR EXPERIENCES",
+    "partner" : "TRUSTED PARTNERS",
+    "project": "PROTECTION PROGRAMS" ,
+    "mem": "ACTIVE MEMBERS",
+
+    "recent_prj": "RECENT PROJECTS",
+    "nature_keepers": "Nature's Keepers",
+    "forest_friend": "Forest's Friend Program",
+    "eco_protect": "EcoProtect Alliance",
+    "donate_now": "Donate now",
+
+    "working_process": "OUR WORKING PROCESS",
+    "you_donate": "YOU DONATE TO WILDLIFE'S PROJECTS",
+    "donating": "Donating",
+    "d_des": "You will fill in the necessary information such as name, email and payment details",
+    "process": "Processing",
+    "p_des": "The system receives and processes your donation information. It's also check and verify the payment details.",
+    "complete": "Completing",
+    "c_des": "The project updated the donation amount to the budget and began using it for planned wildlife protection activities.",
+
+    "latest_new": "OUR LATEST NEW",
+    "new_1": "TRAINING ON FOREST AND WILDLIFE PROTECTION",
+    "new_1_des": "The local communities, those who live near...",
+    
+    "new_2": "MORE THAN 1,200 PEOPLE COMMITTED TO NOT USE ILLEGAL WILDLIFE",
+    "new_2_des": "In order to encourage people living in the buffer zone ...",
+    
+    "new_3": "RELEASING 65 BIG TURTLES",
+    "new_3_des": "These turtles are important as they are the first...",
+    
+    "new_4": "RESUED PANGOLIN RELEASED BACK INTO THE WILD",
+    "new_4_des": "This is the second pangolin found in the past two months....",
+    
+    "new_5": "SAVING WILDLIFE BY PROMOTING ECO-TOURISM",
+    "new_5_des": "As our awareness of environmental issues continues to grow...",
+
+    "feedback": "OUR FEED BACK",
+
+    "fb_1": "I really like the way you organize forest protection activities professionally and with a clear plan. Workshops and community events are very useful, helping to raise environmental awareness for everyone.",
+    "fb_2": "The project showed me the power of the community when working together to protect the environment. Group tree planting and forest cleaning sessions not only contribute to protecting nature but also create opportunities to connect with many new friends.",
+    "fb_3": "I am very impressed with the transparency in the use of project funding. Each donation is publicly detailed and project progress reports are updated regularly. This helps me feel completely secure and confident in my contribution.",
+    "fb_4": "Participating in forest protection activities with the project has helped me learn a lot of new knowledge about ecology and conservation. The project team is very enthusiastic and experienced, always ready to share and guide us.",
+    "fb_5": "The project's activities not only focus on afforestation but also educate the community about the importance of environmental protection. I am happy to see environmental education programs for children and youth.",
+
+    "volunteer": "VOLUNTEER WITH US",
+    "volunteer_des": "If you cut a tree, you kill a life. If you save a tree, you save a life. If you plant a tree, you plant a life.",
+    "sub": "SUBSCRIBE NOW",
+
+    "footer_des": "Help Green Land come together to protect what’s ours. Together we can stop poaching and save the animals from extinction. Place the animals in safe hands.",
+    "nav": "Navigation",
+    "phone": "Phone",
+    "address": "Address:470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang",
+    "mail_box_des": "Please enter your Email to receive our latest notifications!",
+    "your_email": "Your email",
+    "send": "Send",
+
+    "explore": "Explore our story",
+    "a": "A",
+    "new": "NEW",
+    "journey": "JOURNEY",
+    "in": "IN",
+    "wildlife": "WILDLIFE",
+    "experience": "EXPERIENCE",
+    "let_explore": "Let's explore",
+
+
+    "get_to_know1": "GET TO KNOW",
+    "get_to_know2": "ABOUT GREEN LAND",
+    "dedicated": "Dedicated to wildlife preservation and environmental education through community collaboration.",
+    "our_org": "Our organization was established in 2014 with the primary goal of protecting wildlife and their habitats. Our mission arose from the pressing need to conserve biodiversity, which has been threatened by human activities. Our mission is to protect wild animals and their habitats while promoting environmental awareness.",
+
+    "pr1_des" : "Safeguarding our planet's biodiversity and ecosystems for future generations!",
+    "pr2_des" : "Dedicated to protecting and restoring forests, ensuring a sustainable future for our planet and its wildlife!",
+    "pr3_des" : "Uniting communities to conserve natural resources, combat climate change, and promote sustainable living for a healthier planet!",
+    "donated" : "Donated",
+    "goal" : "Goal",
+    "follow": "Follow",
+
+    "how" : "How did this come to our attention",
+    "para_1" : "This awareness has been driven by a growing acknowledgment of the intricate relationship between human actions and the vitality of wildlife. Through scientific research, ecological assessments, and observations of environmental shifts, we've come to realize the profound impact of our activities on wildlife populations, habitats, and ecosystems. Rising concerns over escalating rates of species extinction, habitat loss, and ecosystem degradation have propelled wildlife conservation to the forefront of global attention. Conservation organizations, researchers, and individuals have fervently advocated for the protection and preservation of our planet's diverse wildlife.",
+    "para_2" : "Moreover, as societies grasp the intrinsic value of biodiversity and the essential ecosystem services provided by wildlife, there's been a surge in efforts to integrate wildlife conservation into policies, education, and daily practices. Ultimately, the recognition of wildlife conservation's pivotal role in sustaining ecological equilibrium and supporting human well-being has sparked a collective commitment to address this critical issue.",
+    "slogan" : "Wildlife conservation, habitat preservation, and biodiversity education are fundamental necessities for a thriving ecosystem and a sustainable future.",
+    "donate_phone": "Want to donate by phone",
+    "noproblem" : "Not a problem. Call us now",
+    "oremail" : "Or email us",
+    "safe": "Donate online safely",
+    "safe_des" : "The payment is encrypted and transmitted securely with an SSL protocol.",
+    "the_stories" : "THE STORIES OF US",
+    "how_des" : "This issue came to our attention through alarming rates of species extinction, habitat destruction, and scientific research highlighting the crucial impact of human activities on wildlife and ecosystems.",
+    "how_explore": "Explore",
+
+    "quest_1" : "What is wildlife conservation",
+    "ans_1" : "Wildlife conservation involves protecting animal species and their habitats to ensure their survival and biodiversity.",
+
+    "quest_2" : "How did wildlife conservation become important",
+    "ans_2" : "The significance of wildlife conservation emerged as industrialization and urban expansion led to habitat destruction and species decline, raising awareness about the need to protect our natural heritage.",
+
+    "quest_3" : "How do you ensure my donations to wildlife conservation are used effectively",
+    "ans_3" : "We have rigorous monitoring and evaluation processes to ensure that donations directly support conservation projects, research, and community engagement efforts.",
+
+    "quest_4" : "How do you identify which species need help",
+    "ans_4" : "We collaborate with scientists and researchers who conduct field studies and assessments to identify endangered species and prioritize them for conservation efforts.",
+
+    "quest_5" : "Is my donation to wildlife conservation tax-deductible",
+    "ans_5" : "Yes, donations are typically tax-deductible.",
+
+    "quest_6" : "Where does my donation actually go",
+    "ans_6" : "Donations are allocated to on-the-ground conservation projects, research initiatives, habitat restoration, and community education programs to maximize their impact.",
+
+    "quest_7" : "How do you choose locations for conservation projects",
+    "ans_7" : "We select locations based on scientific research, biodiversity hotspots, and areas where human-wildlife conflict is high, ensuring our efforts make a significant impact.",
+
+    "quest_8" : "What percentage of my donation goes towards conservation programs",
+    "ans_8" : "A substantial percentage of your donation goes directly to conservation programs, with minimal overhead costs, ensuring maximum benefit to wildlife.",
+
+    "make_donation" : "MAKE A DONATION",
+    "donatingto" : "YOU ARE DONATING TO",
+    "donation_amount" : "Enter Donation Amount",
+    "online" : "Donate Online",
+    "offline" : "Donate Offline",
+    "method" : "PAYMENT METHOD",
+    "donate_des" : "* By clicking the donate button, your record will be stored in our database as pending transaction.",
+    "introduce" : "INTRODUCING",
+    "pr1_1" : "In a world where environmental conservation is paramount, the Nature's Keeper Project stands as a beacon of hope and action. Our initiative is driven by a simple yet powerful mission: to safeguard our planet's natural treasures for generations to come. Through a combination of community engagement, scientific research, and innovative conservation practices, we strive to protect biodiversity hotspots, preserve fragile ecosystems, and promote sustainable living practices.",
+    "pr1_2" : "At the heart of our project lies a deep reverence for nature and a commitment to nurturing a harmonious relationship between humanity and the Earth. By empowering individuals, communities, and organizations to become stewards of the environment, we believe in creating a future where both people and nature thrive in balance.",
+    "pr1_3" : "Join us in our journey to become Nature's Keepers and ensure a brighter, greener tomorrow for all!",
+
+    "pr2_1" : "Our mission is simple yet profound: to be the best friend the forest can have by ensuring its health, biodiversity, and resilience for future generations. Our project focuses on a holistic approach to forest conservation. We work tirelessly to restore degraded forest areas, protect existing ones, and promote sustainable practices that benefit both the environment and local communities. Through reforestation efforts, habitat preservation, and education, we aim to combat deforestation and foster a deep connection between people and nature.", 
+    "pr2_2" : "At the core of the Forest Friend Project is a belief in the power of collective action. We collaborate with environmentalists, scientists, volunteers, and indigenous communities to create a network of dedicated forest friends. Together, we champion the cause of our planet's lungs, ensuring they continue to provide clean air, rich biodiversity, and natural beauty.",
+    "pr2_3" : "Join us in the Forest Friend Project and become a guardian of the green. Together, we can nurture the forests that nurture us all!",
+
+    "pr3_1" : "Our mission is to unite individuals, communities, and organizations in the fight against environmental degradation, promoting sustainable practices, and protecting our planet's precious ecosystems. The EcoProtect Alliance operates on the principles of partnership and shared responsibility. We believe that by working together, we can address the most pressing environmental challenges of our time, from climate change and pollution to habitat destruction and biodiversity loss. Our projects span a wide range of activities, including conservation efforts, sustainable development programs, and environmental education campaigns.",
+    "pr3_2" : "Central to our mission is the empowerment of local communities. We work hand-in-hand with grassroots organizations, indigenous peoples, and environmental activists to create solutions that are both effective and inclusive. By fostering a global network of eco-warriors, we aim to inspire collective action and drive meaningful change.", 
+    "pr3_3" : "Join the EcoProtect Alliance and be part of a movement dedicated to preserving our planet for future generations. Together, we can create a sustainable future where nature and humanity thrive in harmony!",
+
+    "promise" : "Our Promise to You",
+    "promise_des" : "Without your loyal support, we couldn’t do the vital work we do. That’s why we promise to uphold the highest ethical standards."
+
+
+}
+  

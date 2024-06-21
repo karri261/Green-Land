@@ -23,6 +23,12 @@ import vnpay from './assets/image/vnpay.png'
 import logo from './assets/image/logo.png';
 import footer_head from './assets/image/footer_head.png'
 
+import flagEn from './assets/image/en.svg';
+import flagVi from './assets/image/vi.svg';
+
+import { useTranslation } from 'react-i18next';
+import i18n from './i18n';
+
 interface Props { }
 
 function Donate2(props: Props) {
@@ -82,6 +88,24 @@ function Donate2(props: Props) {
         }, 2000);
     };
 
+
+    // Change language
+    const [language, setLanguage] = useState<string>(localStorage.getItem('language') || 'en');
+    const [flag, setFlag] = useState<string>(localStorage.getItem('flag') || flagEn);
+
+    useEffect(() => {
+        i18n.changeLanguage(language);
+        setFlag(language === 'en' ? flagEn : flagVi);
+    }, [language]);
+
+    const changeLanguage = () => {
+        const newLanguage = language === 'en' ? 'vi' : 'en';
+        setLanguage(newLanguage);
+        localStorage.setItem('language', newLanguage);
+        localStorage.setItem('flag', newLanguage === 'en' ? flagEn : flagVi);
+    };
+    const { t } = useTranslation();
+
     return (
         <>
             {/* Header*/}
@@ -106,12 +130,15 @@ function Donate2(props: Props) {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1">
-                                    <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/about-us" >About us</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/reality">Reality</Nav.Link>
-                                    <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/home">{t('home')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/about-us">{t('about_us')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/reality">{t('reality')}</Nav.Link>
+                                    <Nav.Link as={NavLink} to="/contact">{t('contact')}</Nav.Link>
                                     <Nav.Link as={NavLink} to="/donate">
-                                        <button className='button button-left'>Donate</button>
+                                        <button className='button button-left'>{t('donate')}</button>
+                                    </Nav.Link>
+                                    <Nav.Link onClick={changeLanguage} style={{ cursor: 'pointer' }}>
+                                        <img src={flag} alt="flag" width="40" height="30" /> {language.toUpperCase()}
                                     </Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
@@ -123,7 +150,7 @@ function Donate2(props: Props) {
             {/* Hero section */}
             <div id="hero">
                 <Container>
-                    <h1>MAKE A DONATION</h1>
+                    <h1>{t('make_donation')}</h1>
                 </Container>
             </div>
             {/* End hero section */}
@@ -135,9 +162,9 @@ function Donate2(props: Props) {
                             <img src={project_2} alt="" />
                         </Col>
                         <Col xl={4} className='content'>
-                            <h6>YOU ARE DONATING TO:</h6>
+                            <h6>{t('donatingto')}:</h6>
                             <h4>Forest's Friendst</h4>
-                            <p>Dedicated to protecting and restoring forests, ensuring a sustainable future for our planet!</p>
+                            <p>{t('pr2_des')}!</p>
                             <ul className='socials-list'>
                                 <li>
                                     <FontAwesomeIcon className='icon' icon={faFacebookF} />
@@ -156,7 +183,7 @@ function Donate2(props: Props) {
                         <Col xl={5}>
                             <div className="donate-box">
                                 <div>
-                                    <label>Enter Donation Amount: </label>
+                                    <label>{t('donation_amount')}: </label>
                                     <br />
                                     <input
                                         className='amount'
@@ -179,7 +206,7 @@ function Donate2(props: Props) {
                                                 className="form-check-label"
                                                 htmlFor="online"
                                             >
-                                                Donate Online
+                                                {t('online')}
                                             </label>
                                         </div>
                                     </Col>
@@ -195,27 +222,25 @@ function Donate2(props: Props) {
                                                 className="form-check-label"
                                                 htmlFor="offline"
                                             >
-                                                Donate Offline
+                                                {t('offline')}
                                             </label>
                                         </div>
                                     </Col>
                                 </Row>
                                 {donateMethod === 'offline' && (
                                     <div className="offline-content">
-                                        <div className='title'>PAYMENT METHOD</div>
-                                        <div className='main-content'>
-                                            * By clicking the donate button, your record will be stored in our database as pending transaction. After your payment verifed, we will send receipt to your email,
-                                        </div>
+                                        <div className='title'>{t('method')}</div>
+                                        <div className='main-content'>{t('donate_des')}</div>
                                         <br />
-                                        <button className='button button-left' onClick={handleDonateNow}>Donate now</button>
+                                        <button className='button button-left' onClick={handleDonateNow}>{t('donate_now')}</button>
                                     </div>
                                 )}
                                 {donateMethod === 'online' && (
                                     <div className="online-content">
-                                        <div className='title'>PAYMENT METHOD</div>
+                                        <div className='title'>{t('method')}</div>
                                         <img src={vnpay} alt="" />
                                         <br />
-                                        <button className='button button-left' onClick={handleDonate}>Donate now</button>
+                                        <button className='button button-left' onClick={handleDonate}>{t('donate_now')}</button>
                                     </div>
                                 )}
                                 {showAlert && (
@@ -233,26 +258,17 @@ function Donate2(props: Props) {
                 <Container>
                     <Row>
                         <Col xl={7} className='descript'>
-                            <h3>INTRODUCING THE FOREST'S FRIENDS</h3>
-                            <p>
-                                Our mission is simple yet profound: to be the best friend the forest can have by ensuring its health, biodiversity, and resilience for future generations. Our project focuses on a holistic approach to forest conservation. We work tirelessly to restore degraded forest areas, protect existing ones, and promote sustainable practices that benefit both the environment and local communities. Through reforestation efforts, habitat preservation, and education, we aim to combat deforestation and foster a deep connection between people and nature.
-                            </p>
-                            <p>
-                                At the core of the Forest Friend Project is a belief in the power of collective action. We collaborate with environmentalists, scientists, volunteers, and indigenous communities to create a network of dedicated forest friends. Together, we champion the cause of our planet's lungs, ensuring they continue to provide clean air, rich biodiversity, and natural beauty.
-                            </p>
-                            <p>
-                                Join us in the Forest Friend Project and become a guardian of the green. Together, we can nurture the forests that nurture us all!
-                            </p>
+                            <h3>{t('introduce')} THE FOREST'S FRIENDS</h3>
+                            <p>{t('pr2_1')}</p>
+                            <p>{t('pr2_2')}</p>
+                            <p>{t('pr2_3')}</p>
                             <hr />
                         </Col>
                         <Col md={7} >
-                            <h4>Our Promise to You</h4>
-                            <p className='promise'>
-                                Without your loyal support, we couldn’t do the vital work we do. That’s why we promise to uphold the highest ethical standards. You can send through any feedback or grievances here.
-                            </p>
+                            <h4>{t('promise')}</h4>
+                            <p className='promise'>{t('promise_des')}</p>
                         </Col>
                     </Row>
-
                 </Container>
             </div >
             {/* End project's description */}
@@ -268,7 +284,7 @@ function Donate2(props: Props) {
                             <Row>
                                 <Col lg={4} sm={12}>
                                     <h2>GREEN LAND</h2>
-                                    <p>Help Green Land come together to protect what’s ours. Together we can stop poaching and save the animals from extinction. Place the animals in safe hands.</p>
+                                    <p>{t('footer_des')}</p>
                                     <div className="contact-list">
                                         <a href="https://www.facebook.com/" target='_blank'>
                                             <FontAwesomeIcon className='icon' icon={faFacebookF} />
@@ -286,41 +302,40 @@ function Donate2(props: Props) {
                                 </Col>
                                 <Col lg={2} xs={6}>
                                     <ul>
-                                        <li className='head'><b>Navigation</b></li>
+                                        <li className='head'><b>{t('nav')}</b></li>
                                         <li>
-                                            <Link to='/home'>Home</Link>
+                                            <Link to='/home'>{t('home')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/about-us'>About us</Link>
+                                            <Link to='/about-us'>{t('about_us')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/reality'>Reality</Link>
+                                            <Link to='/reality'>{t('reality')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/contact'>Contact</Link>
+                                            <Link to='/contact'>{t('contact')}</Link>
                                         </li>
                                         <li>
-                                            <Link to='/donate'>Donate</Link>
+                                            <Link to='/donate'>{t('donate')}</Link>
                                         </li>
                                     </ul>
                                 </Col>
                                 <Col lg={3} xs={6}>
                                     <ul>
-                                        <li className='head'><b>Contact</b></li>
-                                        <li>Phone: 0236 3667 111</li>
+                                        <li className='head'><b>{t('contact')}</b></li>
+                                        <li>{t('phone')}: 0236 3667 111</li>
                                         <li>Email: greenland@gmail.com</li>
-                                        <li>Address: <br />
-                                            470 Tran Dai Nghia, Hoa Quy, Ngu Hanh Son, Da Nang</li>
+                                        <li>{t('address')}</li>
                                     </ul>
                                 </Col>
                                 <Col lg={3} sm={12}>
                                     <ul>
                                         <li className='head'><b>Mailbox</b></li>
-                                        <li>Please enter your Email to receive our latest notifications!</li>
+                                        <li>{t('mail_box_des')}</li>
                                         <li className='email-input'>
                                             <form action="">
-                                                <input type="email" name="" id="" placeholder='Your email' />
-                                                <button>Send</button>
+                                                <input type="email" name="" id="" placeholder={t('your_email')} />
+                                                <button>{t('send')}</button>
                                             </form>
                                         </li>
                                     </ul>
