@@ -64,11 +64,14 @@ function Donate(props: Props) {
     const [amount, setAmount] = useState<number>(0);
     const [locale, setLocale] = useState<string>('en');
 
+    const projectId = '66769038f82351ff111ac31f'
+
     const handleDonate = async () => {
         try {
             const response = await axios.post('http://localhost:5000/api/payment/create_payment_url', {
                 amount,
-                locale
+                locale,
+                projectId
             });
             window.location.href = response.data.redirectUrl;
         } catch (error) {

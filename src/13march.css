@@ -106,6 +106,7 @@ svg {
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 #content .head nav .breadcrumb {
@@ -167,5 +168,18 @@ svg {
 #content .socials-list li a:hover {
     color: var(--color-01);
     cursor: pointer;
+}
+
+#content .navigator {
+    display: flex;
+    justify-content: space-between;
+}
+#content .navigator span,
+#content .navigator svg {
+    color: #292929;
+}
+#content .navigator .next a,
+#content .navigator .prev a {
+    text-decoration: none;
 }
 /* End main */

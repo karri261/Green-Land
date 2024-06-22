@@ -28,7 +28,7 @@ import i18n from './i18n';
 
 interface Props { }
 
-function March13(props: Props) {
+function Dec23(props: Props) {
     const { } = props
 
     const [isScrolledPast, setIsScrolledPast] = useState(false);
@@ -109,14 +109,14 @@ function March13(props: Props) {
             {/* Main */}
             <div id="content">
                 <div className="head">
-                    <div className="header">{t('title_1')}</div>
+                    <div className="header">{t('title_5')}</div>
                     <Breadcrumb>
                         <Breadcrumb.Item>
                             <Link to="/home">
                                 <FontAwesomeIcon icon={faHouse} />
                             </Link>
                         </Breadcrumb.Item>
-                        <Breadcrumb.Item active>{t('title_1')}</Breadcrumb.Item>
+                        <Breadcrumb.Item active>{t('title_5')}</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>
                 <Container>
@@ -124,24 +124,17 @@ function March13(props: Props) {
                         <FontAwesomeIcon icon={faUser} />
                         Admin -
                         <FontAwesomeIcon icon={faClock} />
-                        {t('date_1')} - {t('latest')}
+                        {t('date_5')} - {t('latest')}
                     </div>
                     <div className="inner_main_content">
-                        <img src={"https://www.nature.org.vn/en/wp-content/uploads/2023/07/1304_taphuantruyenthong-700x350-1.jpeg"} alt="" />
+                        <img src={"https://svw.vn/wp-content/uploads/2023/04/Eco-Tourism-Initiative-in-Pu-Mat-National-Park-@SVW_3.jpg"} alt="" />
                         <p>{t('new_1_1')}</p>
                         <p>{t('new_1_2')}</p>
                         <p>{t('new_1_3')}</p>
                         <p>{t('new_1_4')}</p>
                         <p>{t('new_1_5')}</p>
-                        <p>{t('new_1_6')}</p>
-                        <p>{t('new_1_7')}</p>
-                        <img src={"https://www.nature.org.vn/en/wp-content/uploads/2023/07/1304_taphuantruyenthong1-1.jpeg"} alt="" />
-                        <img src={"https://www.nature.org.vn/en/wp-content/uploads/2023/07/1304_taphuantruyenthong3-2.jpeg"} alt="" />
-                        <span>{t('new_des_1_1')}</span>
-                        <img src={"https://www.nature.org.vn/en/wp-content/uploads/2023/07/1304_taphuantruyenthong4-1.jpeg"} alt="" />
-                        <span>{t('new_des_1_2')}</span>
-                        <img src={"https://www.nature.org.vn/en/wp-content/uploads/2023/07/1304_taphuantruyenthong6-1.jpeg"} alt="" />
-                        <span>{t('new_des_1_3')}</span>
+                        <img src={"https://svw.vn/wp-content/uploads/2023/04/Khao-sat-suoi-3-1152x1536.jpg"} alt="" />
+                        <img src={"https://svw.vn/wp-content/uploads/2023/04/Eco-Tourism-Initiative-in-Pu-Mat-National-Park-@SVW_4-1.jpg"} alt="" />
                         <p className='share'>{t('sharing')}</p>
                         <ul className='socials-list'>
                             <li>
@@ -174,12 +167,12 @@ function March13(props: Props) {
                     </div>
                     <div className="navigator">
                         <div className="prev">
-                            <Link to="/trainning">
+                            <Link to="/resued">
                                 <FontAwesomeIcon icon={faAngleLeft} /> <span>{t('prev')}</span>
                             </Link>
                         </div>
                         <div className="next">
-                            <Link to="/conferences">
+                            <Link to="/saving">
                                 <span>{t('next')}</span><FontAwesomeIcon icon={faAngleRight} />
                             </Link>
                         </div>
@@ -270,5 +263,5 @@ function March13(props: Props) {
     );
 }
 
-export default March13;
+export default Dec23;
 

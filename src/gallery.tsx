@@ -142,7 +142,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--3">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Deer" className="gallery__link">
                             <img src={"https://images.pexels.com/photos/3874511/pexels-photo-3874511.jpeg?auto=compress&cs=tinysrgb&w=600"} className="gallery__image" alt="" />
                             <div className="gallery__overlay">
                                 <span>{t('deer')}</span>
@@ -150,7 +150,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--4">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Elephant" className="gallery__link">
                             <img src={"https://images.pexels.com/photos/53125/elephant-tusk-ivory-animal-53125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" alt="" />
                             <div className="gallery__overlay">
                                 <span>{t('elephant')}</span>
@@ -158,7 +158,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--5">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Koala" className="gallery__link">
                             <img src={"https://images.pexels.com/photos/3059285/pexels-photo-3059285.jpeg"} className="gallery__image" alt="" />
                             <div className="gallery__overlay">
                                 <span>{t('koalar')}</span>
@@ -166,7 +166,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--6">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Giant_panda" className="gallery__link">
                             <img src={"https://images.pexels.com/photos/1661535/pexels-photo-1661535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" alt="" />
                             <div className="gallery__overlay">
                                 <span>{t('gpanda')}</span>
@@ -176,7 +176,7 @@ function Gallery(props: Props) {
                 </div>
                 <div className="gallery pt-2">
                     <div className="gallery__item gallery__item--1">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Puffin" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/6471196/pexels-photo-6471196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('puffin')}</span>
@@ -184,7 +184,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--2">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Red_panda" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/5633389/pexels-photo-5633389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('rpanda')}</span>
@@ -192,7 +192,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--3">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Amur_leopard" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/20449623/pexels-photo-20449623/free-photo-of-leopard-in-sunlight-and-shadow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('amur')}</span>
@@ -200,7 +200,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--4">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Whale" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('whale')}</span>
@@ -208,7 +208,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--5">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Polar_bear" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/2698880/pexels-photo-2698880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('polar')}</span>
@@ -216,7 +216,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--6">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Hippopotamus" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/5504243/pexels-photo-5504243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('hippopotamus')}</span>
@@ -226,7 +226,7 @@ function Gallery(props: Props) {
                 </div>
                 <div className="gallery pt-2">
                     <div className="gallery__item gallery__item--1">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Snow_leopard" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/751820/pexels-photo-751820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('sleopard')}</span>
@@ -234,7 +234,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--2">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Beluga_whale" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/9408378/pexels-photo-9408378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('beluga')}</span>
@@ -242,7 +242,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--3">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Kangaroo" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/5490211/pexels-photo-5490211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('kangaroo')}</span>
@@ -250,7 +250,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--4">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Loggerhead_sea_turtle" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/25975158/pexels-photo-25975158/free-photo-of-portrait-of-a-turtle.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('l_turtle')}</span>
@@ -258,7 +258,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--5">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Macaw" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/2642167/pexels-photo-2642167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('m_bird')}</span>
@@ -266,7 +266,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--6">
-                        <a href="/" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Arctic_fox" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/271932/pexels-photo-271932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('s_fox')}</span>

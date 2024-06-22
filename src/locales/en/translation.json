@@ -63,7 +63,7 @@
     "new_3": "RELEASING 65 BIG TURTLES",
     "new_3_des": "These turtles are important as they are the first...",
     
-    "new_4": "RESUED PANGOLIN RELEASED BACK INTO THE WILD",
+    "new_4": "RESCUED PANGOLIN RELEASED BACK INTO THE WILD",
     "new_4_des": "This is the second pangolin found in the past two months....",
     
     "new_5": "SAVING WILDLIFE BY PROMOTING ECO-TOURISM",
@@ -241,8 +241,43 @@
     "Pollution": "Pollution",
     "des_pollution": "Pollution is the introduction of harmful materials into the environment. These harmful materials are called pollutants. Pollutants can be natural, such as volcanic ash. They can also be created by human activity, such as trash or runoff produced by factories. Pollutants damage the quality of air, water, and land. Many things that are useful to people produce pollution. Cars spew pollutants from their exhaust pipes. Burning coal to create electricity pollutes the air. Industries and homes generate garbage and sewage that can pollute the land and water. Pesticides—chemical poisons used to kill weeds and insects—seep into waterways and harm wildlife.",
     "See More": "See more",
-    "See Less": "See less"
+    "See Less": "See less",
 
+    "title_1" : "Training on Forest and Wildlife Protection",
+    "date_1" : "13 March",
+    "new_1_1" : "The local communities, those who live near the forest and depend on it for their livelihood, play a vital role in protecting the forest and its resources, including wildlife. However, in many cases, these locals are directly involved in deforestation and hunting wildlife due to the pressing needs for sustenance and income. This dual role as both protectors and exploiters highlights a critical area for intervention.",
+    "new_1_2" : "Raising awareness to change behaviors that harm forests and wildlife is extremely important. But more importantly, equipping these locals so that they can directly communicate and bring change to their communities is crucial for sustainable conservation efforts. Empowering the local population with knowledge and skills allows them to become ambassadors for the forest, leading to more effective and culturally relevant conservation strategies.",
+    "new_1_3" : "With this view, GreenLand organized a training course on Forest and Wildlife Protection Communication with the aim of equipping the community with basic skills to carry out communication activities about forest and wildlife protection while also supporting the community to practice for future application. The training course was held from March 1 at the Cultural House of Hua Tat commune, Van Ho, Son La.",
+    "new_1_4": "The three-day training course brought together community members from various backgrounds, all united by a common goal: to learn and implement effective communication strategies that promote the preservation of their natural surroundings. The program included workshops on environmental education, sessions on developing and delivering compelling messages, and practical exercises that allowed participants to hone their newfound skills.",
+    "new_1_5" : "Participants learned about the importance of biodiversity, the roles forests play in climate regulation, and the impacts of wildlife on ecosystem health. They were also trained in using various communication tools, from traditional storytelling and folk media to modern social media platforms, to reach diverse audiences within their communities.",
+    "new_1_6" : "To ensure the effectiveness of the training, GreenLand invited experts in environmental communication, local leaders, and conservationists who shared their experiences and insights. The interactive nature of the training encouraged participants to share their own stories and challenges, fostering a sense of community and collective responsibility.",
+    "new_1_7" : "One of the key outcomes of the training was the development of localized communication plans tailored to the specific needs and contexts of the participants' communities. These plans included strategies for raising awareness about illegal logging, promoting sustainable agricultural practices, and advocating for the protection of endangered species",
+    "new_des_1_1" : "Communities practice using social networking platforms on mobile phones",
+    "new_des_1_2" : "Community in warm-up activities",
+    "new_des_1_3" : "Paticipants practice video recording and taking photos",
+
+    "title_2" : "More than 1,200 people commited to not use illegal wildlife through a series of raising awareness conferences",
+    "date_2" : "27 Jan",
+    "new_2_1" : "In an effort to foster active participation in forest protection and wildlife conservation among residents of the buffer zone in Vietnam, GreenLand collaborated with Cat Tien National Park to organize a series of awareness-raising conferences. These events aimed to enhance law enforcement in forest protection, fire prevention, and wildlife conservation across three provinces: Dong Nai, Lam Dong, and Binh Phuoc.",
+    "new_2_2" : "Over a three-week period, the Organizing Committee conducted a total of 11 conferences. Specifically, in Dong Nai province, conferences were held in Nam Cat Tien, Ta Lai, Dak Lua, and Thanh Son communes. In Lam Dong province, conferences took place in Dong Nai Thuong, Tien Hoang, Gia Vien, Phuoc Cat 2, Da Kho, and Loc Bac communes. Additionally, a commune-level conference was held in Dang Ha, Binh Phuoc province. These gatherings collectively drew 1,215 participants, including 256 leaders and officials from various state units, 959 local community members, restaurant owners operating in the area, and individuals influencing forest resources. The events were supported by 1 leader and 2 staff from Cat Tien National Park, alongside 1 coordinator and 10 GreenLand staff members.",
+    "new_2_3" : "Through these conferences, GreenLand aimed to educate and mobilize local stakeholders towards sustainable practices in forest management, fire prevention, and the protection of wildlife. The collaboration with Cat Tien National Park underscores a concerted effort to safeguard biodiversity and promote responsible environmental stewardship within the buffer zone communities.",
+
+    "title_3" : "Releasing 65 big turtle",
+    "date_3" : "04 Dec",
+    "new_3_1" : "GreenLand, in partnership with Pu Mat National Park, undertook a significant rescue operation that resulted in the retrieval of 127 large-headed turtles from illegal trafficking incidents in Nghe An province, spanning from December 2022 to April 2023. Tragically, despite the dedicated efforts upon their arrival at the rescue center, a number of these turtles did not survive the injuries sustained during their illegal trade and transportation.",
+    "new_3_2" : "Nevertheless, the collaboration between GreenLand and Pu Mat National Park ensured the safe rehabilitation and subsequent release of the surviving turtles back into their natural habitat. Each successful release represents a vital contribution to the preservation of these endangered species and reinforces our steadfast commitment to wildlife protection.",
+    "new_3_3" : "Presently, Pu Mat Rescue Center continues to provide care for an additional 55 turtles, patiently awaiting their rehabilitation and eventual release. Through ongoing expert care and meticulous preparation, these turtles are being nurtured with the aim of reintegrating them into the wild. Their future release will further bolster the population and ecological diversity of the region, marking another significant milestone in our collective conservation efforts.",
+
+    "title_4" : "Rescued endangered pangolin released back into the wild",
+    "date_4" : "11 Nov",
+
+    "title_5" : "Saving wildlife by promoting eco-tourism",
+    "date_5" : "23 Dec",
+  
+    "latest" : "Latest news",
+    "sharing" : "SHARING IS CARING❤",
+    "prev" : "Previous post",
+    "next" : "Next post"
 
 }
   

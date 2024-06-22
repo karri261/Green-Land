@@ -410,7 +410,7 @@ function HomePage(props: Props) {
                         <div className="box-header">
                            <div className="main-img">
                               <a href="#" target='_blank'>
-                                 <img src={section_7_1} alt="" />
+                                 <Nav.Link as={NavLink} to="/trainning"><img src={section_7_1} alt="" /></Nav.Link>
                               </a>
                            </div>
                            <div className="date-box">
@@ -427,7 +427,7 @@ function HomePage(props: Props) {
                         <div className="box-header">
                            <div className="main-img">
                               <a href="#" target='_blank'>
-                                 <img src={section_7_2} alt="" />
+                                 <Nav.Link as={NavLink} to="/conferences"><img src={section_7_2} alt="" /></Nav.Link>
                               </a>
                            </div>
                            <div className="date-box">
@@ -436,7 +436,7 @@ function HomePage(props: Props) {
                            </div>
                         </div>
                         <div className="title">
-                           <a href="#">{t('new_2')}</a>
+                           <Nav.Link as={NavLink} to="/conferences">{t('new_2')}</Nav.Link>
                         </div>
                         <div className="description">{t('new_2_des')}</div>
                      </div>
@@ -444,7 +444,7 @@ function HomePage(props: Props) {
                         <div className="box-header">
                            <div className="main-img">
                               <a href="#" target='_blank'>
-                                 <img src={section_7_3} alt="" />
+                                 <Nav.Link as={NavLink} to="/release"><img src={section_7_3} alt="" /></Nav.Link>
                               </a>
                            </div>
                            <div className="date-box">
@@ -453,7 +453,9 @@ function HomePage(props: Props) {
                            </div>
                         </div>
                         <div className="title">
-                           <a href="#">{t('new_3')}</a>
+                           <a href="#" target='_blank'>
+                              <Nav.Link as={NavLink} to="/realse">{t('new_3')}</Nav.Link>
+                           </a>
                         </div>
                         <div className="description">{t('new_3_des')}</div>
                      </div>
@@ -461,7 +463,7 @@ function HomePage(props: Props) {
                         <div className="box-header">
                            <div className="main-img">
                               <a href="#" target='_blank'>
-                                 <img src={section_7_4} alt="" />
+                                 <Nav.Link as={NavLink} to="/resued"><img src={section_7_4} alt="" /></Nav.Link>
                               </a>
                            </div>
                            <div className="date-box">
@@ -470,7 +472,9 @@ function HomePage(props: Props) {
                            </div>
                         </div>
                         <div className="title">
-                           <a href="#" target='_blank'>{t('new_4')}</a>
+                           <a href="#" target='_blank'>
+                              <Nav.Link as={NavLink} to="/resued">{t('new_4')}</Nav.Link>
+                           </a>
                         </div>
                         <div className="description">{t('new_4_des')}</div>
                      </div>
@@ -478,7 +482,7 @@ function HomePage(props: Props) {
                         <div className="box-header">
                            <div className="main-img">
                               <a href="#" target='_blank'>
-                                 <img src={section_7_5} alt="" />
+                                 <Nav.Link as={NavLink} to="/saving"><img src={section_7_5} alt="" /></Nav.Link>
                               </a>
                            </div>
                            <div className="date-box">
@@ -487,7 +491,9 @@ function HomePage(props: Props) {
                            </div>
                         </div>
                         <div className="title">
-                           <a href="#" target='_blank'>{t('new_5')}</a>
+                           <a href="#" target='_blank'>
+                              <Nav.Link as={NavLink} to="/saving">{t('new_5')}</Nav.Link>
+                           </a>
                         </div>
                         <div className="description">{t('new_5_des')}</div>
                      </div>

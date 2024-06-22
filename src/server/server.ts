@@ -6,6 +6,11 @@ import crypto from 'crypto';
 import cors from 'cors';
 import qs from 'qs';
 
+import mongoose from 'mongoose';
+import { Donation } from '../models/donation';
+import { Project } from '../models/project';
+import { MongoClient } from 'mongodb';
+
 const app = express();
 
 const PORT = 5000;
@@ -13,6 +18,22 @@ const PORT = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+// const uri = 'mongodb://localhost:27017';
+// const dbName = 'Wildlife_Conservation_Website';
+
+// const client = new MongoClient(uri);
+
+// async function connectMongo() {
+//     try {
+//         await client.connect();
+//         console.log('Connected to MongoDB');
+//         const db = client.db(dbName);
+//     } catch (err) {
+//         console.error('Error connecting to MongoDB:', err);
+//     }
+// }
+// connectMongo();
 
 app.post('/api/payment/create_payment_url', (req, res) => {
     try {
@@ -31,7 +52,10 @@ app.post('/api/payment/create_payment_url', (req, res) => {
         const secretKey: string = config.get('vnp_HashSecret');
         let vnpUrl: string = config.get('vnp_Url');
         const returnUrl: string = config.get('vnp_ReturnUrl');
-        const orderId = moment(date).format('DDHHmmss');
+        // Lưu projectId
+        const projectId = req.body.projectId;
+        const orderId = `${moment(date).format('DDHHmmss')}_${projectId}`;
+
         const amount = req.body.amount;
         const bankCode = req.body.bankCode || '';
         const locale = req.body.locale || 'vn';
@@ -66,13 +90,15 @@ app.post('/api/payment/create_payment_url', (req, res) => {
         console.log('Generated vnpUrl:', vnpUrl);
 
         res.json({ redirectUrl: vnpUrl });
+
+        
     } catch (error) {
         console.error('Error creating payment URL:', error);
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
 
-app.get('/vnpay_return', (req, res) => {
+app.get('/vnpay_return', async (req, res) => {
     try {
         let vnp_Params = req.query;
 

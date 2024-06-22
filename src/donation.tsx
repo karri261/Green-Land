@@ -245,7 +245,7 @@ const Donation: React.FC = () => {
                                     <ProgressBar now={40} />
                                     <div className="status">
                                         <div className='donated'>40% {t('donated')}</div>
-                                        <div className='goal'>{t('goal')}: 100,000,000,000 VND</div>
+                                        <div className='goal'>{t('goal')}: 700,000,000 VND</div>
                                     </div>
                                     <hr />
                                     <ul className='socials-list'>
