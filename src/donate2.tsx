@@ -163,7 +163,7 @@ function Donate2(props: Props) {
                         </Col>
                         <Col xl={4} className='content'>
                             <h6>{t('donatingto')}:</h6>
-                            <h4>Forest's Friendst</h4>
+                            <h4>Forest's Friends</h4>
                             <p>{t('pr2_des')}!</p>
                             <ul className='socials-list'>
                                 <li>

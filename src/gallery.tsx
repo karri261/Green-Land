@@ -126,7 +126,7 @@ function Gallery(props: Props) {
                 <h2 className="gallery-header">{t('animals')} <span className="text-success fw-lighter">{t('Gallery')}</span></h2>
                 <div className="gallery">
                     <div className="gallery__item gallery__item--1">
-                        <a href="/" className="gallery__link">
+                        <a href="https://vi.wikipedia.org/wiki/R%C3%B9a_bi%E1%BB%83n" className="gallery__link" target='_blank'>
                             <img src={"https://images.pexels.com/photos/5349869/pexels-photo-5349869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" alt="" />
                             <div className="gallery__overlay">
                                 <span>{t('sea_turtle')}</span>
@@ -134,7 +134,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--2">
-                        <a href="/" className="gallery__link">
+                        <a href="https://vi.wikipedia.org/wiki/Rhinoceros" className="gallery__link" target='_blank'>
                             <img src={"https://images.pexels.com/photos/16040/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" alt="" />
                             <div className="gallery__overlay">
                                 <span>{t('rhino')}</span>
