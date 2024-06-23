@@ -1,4 +1,9 @@
 {
+    "name_error" : "Họ và tên chỉ được chứa các ký tự chữ",
+    "name_require" : "Không được để trống những ô trên",
+    "mail_error" : "Không đúng định dạng mail",
+    "mail_require" : "Không được để trống ô trên",
+
     "variety": "SỰ ĐA DẠNG",
     "is_the": "CHÍNH LÀ",
     "spice": "GIA VỊ",

@@ -266,7 +266,7 @@ function Gallery(props: Props) {
                         </a>
                     </div>
                     <div className="gallery__item gallery__item--6">
-                        <a href="https://en.wikipedia.org/wiki/Arctic_fox" className="gallery__link">
+                        <a href="https://en.wikipedia.org/wiki/Swift_fox" className="gallery__link">
                             <img alt="" src={"https://images.pexels.com/photos/271932/pexels-photo-271932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} className="gallery__image" />
                             <div className="gallery__overlay">
                                 <span>{t('s_fox')}</span>

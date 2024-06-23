@@ -178,6 +178,63 @@ function HomePage(props: Props) {
    };
 
    const { t } = useTranslation();
+// Form
+   const [firstName, setFirstName] = useState('');
+   const [lastName, setLastName] = useState('');
+   const [email, setEmail] = useState('');
+
+   const [nameError, setNameError] = useState('');
+   const [emailError, setEmailError] = useState('');
+
+   const validateName = (name : string) => {
+      return /^[a-zA-Z\s]*$/.test(name);
+   };
+
+   const validateEmail = (email : string) => {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+   };
+
+   const handleFirstNameChange = (e : any) => {
+      const value = e.target.value;
+      setFirstName(value);
+      validateNames(value, lastName);
+   };
+
+   const handleLastNameChange = (e : any) => {
+      const value = e.target.value;
+      setLastName(value);
+      validateNames(firstName, value);
+   };
+
+   const validateNames = (first : string, last : string) => {
+      if (!first && !last) {
+         setNameError(t('name_require'));
+      } else if (!validateName(first) || !validateName(last)) {
+         setNameError(t('name_error'));
+      } else {
+         setNameError('');
+      }
+   };
+
+   const handleEmailChange = (e : any) => {
+      const value = e.target.value;
+      setEmail(value);
+      if (!value) {
+         setEmailError(t('mail_require'));
+      } else if (!validateEmail(value)) {
+         setEmailError(t('mail_error'));
+      } else {
+         setEmailError('');
+      }
+   };
+
+   const handleSubmit = (e : any) => {
+      e.preventDefault();
+      validateNames(firstName, lastName);
+      if (!nameError && !emailError) {
+         console.log('Form submitted');
+      }
+   };
 
    return (
       <>
@@ -584,7 +641,7 @@ function HomePage(props: Props) {
                      </div>
                   </div>
                   <div className="col-xl-5 col-12 mx-auto">
-                     <form action="#" className="contact-form custom-form">
+                     <form action="#" className="contact-form custom-form" onSubmit={handleSubmit}>
                         <p style={{ color: "#315740" }}>{t('our_contact')}</p>
                         <h2>{t('getin')}</h2>
                         <div className="row">
@@ -595,7 +652,8 @@ function HomePage(props: Props) {
                                  name="first-name"
                                  id="first-name"
                                  placeholder={t('fname')}
-                                 required={true}
+                                 value={firstName}
+                                 onChange={handleFirstNameChange}
                               />
                            </div>
                            <div className="col-lg-6 col-md-6 col-12">
@@ -605,18 +663,22 @@ function HomePage(props: Props) {
                                  name="last-name"
                                  id="last-name"
                                  placeholder={t('lname')}
-                                 required={true}
+                                 value={lastName}
+                                 onChange={handleLastNameChange}
                               />
                            </div>
                         </div>
+                        <div className="error-message">{nameError}</div>
                         <input
                            type="email"
                            className="form-control"
                            name="email"
                            id="email"
                            placeholder="example@gmail.com"
-                           required={true}
+                           value={email}
+                           onChange={handleEmailChange}
                         />
+                        <div className="error-message">{emailError}</div>
                         <textarea
                            name="message"
                            id="message"

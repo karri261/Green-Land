@@ -1,4 +1,9 @@
 {
+    "name_error" : "Names should only contain letters",
+    "name_require" : "First name and Last name are required",
+    "mail_error" : "Invalid email format",
+    "mail_require" : "Email is required",
+
     "variety": "VARIETY",
     "is_the": "IS THE",
     "spice": "SPICE",

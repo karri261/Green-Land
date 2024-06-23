@@ -1011,6 +1011,13 @@ ul {
     margin-top: 15px;
     width: 100%;
 }
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    height: 20px;
+  }
 /* End contact */
 /* Section footer */
 #footer {
@@ -1079,6 +1086,14 @@ ul {
 }
 /* End section footer */
 /* Responsive */
+@media screen and (max-width: 1200px) {
+    .contact-main {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 0;
+        position: relative;
+    }
+}
 @media screen and (max-width: 992px) {
     #impact .inner-infor {
         flex-direction: column;
