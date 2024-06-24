@@ -6,11 +6,6 @@ import crypto from 'crypto';
 import cors from 'cors';
 import qs from 'qs';
 
-import mongoose from 'mongoose';
-import { Donation } from '../models/donation';
-import { Project } from '../models/project';
-import { MongoClient } from 'mongodb';
-
 const app = express();
 
 const PORT = 5000;

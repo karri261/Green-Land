@@ -84,7 +84,7 @@ function Donate(props: Props) {
     const handleDonateNow = () => {
         setShowAlert(true);
         setTimeout(() => {
-            setShowAlert(false); // Tắt alert sau 3 giây
+            // setShowAlert(false); 
             navigate('/donate'); // Chuyển hướng sau 3 giây
         }, 2000);
     };
