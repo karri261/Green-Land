@@ -285,7 +285,7 @@ function HomePage(props: Props) {
                   <div>{t('is_the')}</div>
                   <div>{t('spice')}</div>
                   <div>{t('of')}</div>
-                  <div>{t('life')}!</div>
+                  <div>{t('life')}</div>
                </div>
             </div>
             <div className="layer layer-02">
